@@ -1,3 +1,5 @@
+
+
 //
 //  AppDelegate.swift
 //  PPCalc
@@ -5,7 +7,7 @@
 //  Created by Yevhen Roman on 06.07.17.
 //  Copyright © 2017 EugeneRoman. All rights reserved.
 //
-
+import LocalAuthentication
 import UIKit
 import CoreData
 
@@ -88,6 +90,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    
 
 }
 
