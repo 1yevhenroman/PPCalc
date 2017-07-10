@@ -271,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdR-7G-nuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4254" y="-3091"/>
+            <point key="canvasLocation" x="2889" y="-1805"/>
         </scene>
         <!--Logged-->
         <scene sceneID="MOJ-TS-gJ6">
@@ -639,7 +639,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LcG-2J-tf8"/>
+        <segue reference="SNI-MF-LBW"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

@@ -88,7 +88,7 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.039156"
+                  timestampString = "521384912.74902"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "6"
@@ -103,7 +103,7 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.04391"
+                  timestampString = "521384912.753503"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "6"
@@ -118,7 +118,7 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.047742"
+                  timestampString = "521384912.757613"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "6"
@@ -135,7 +135,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373267.161384"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
@@ -151,7 +151,7 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.058052"
+                  timestampString = "521384912.7703"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "7"
@@ -166,7 +166,7 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.06008"
+                  timestampString = "521384912.773258"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "7"
@@ -181,7 +181,7 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.061933"
+                  timestampString = "521384912.775163"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "7"
@@ -198,11 +198,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373267.551999"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
             landmarkName = "CalcLogic"
             landmarkType = "3">
             <Locations>
@@ -214,11 +214,11 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.070457"
+                  timestampString = "521384912.783538"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
@@ -229,11 +229,11 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.074831"
+                  timestampString = "521384912.786036"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
@@ -244,11 +244,11 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.079529"
+                  timestampString = "521384912.788901"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "8"
-                  endingLineNumber = "8"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
                   offsetFromSymbolStart = "32">
                </Location>
             </Locations>
@@ -261,70 +261,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373267.927303"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "CalcLogic"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.flagY.getter : Swift.Int"
-                  moduleName = "PPCalc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.089302"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.flagY.setter : Swift.Int"
-                  moduleName = "PPCalc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.091366"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.init () -&gt; PPCalc.CalcLogic"
-                  moduleName = "PPCalc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.093557"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10"
-                  offsetFromSymbolStart = "45">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BrainClass.swift"
-            timestampString = "521373268.309266"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
@@ -336,15 +273,78 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.operationActive.getter : Swift.Int"
+                  symbolName = "PPCalc.CalcLogic.flagY.getter : Swift.Int"
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.099953"
+                  timestampString = "521384912.800082"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.flagY.setter : Swift.Int"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384912.8041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.init () -&gt; PPCalc.CalcLogic"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384912.807993"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainClass.swift"
+            timestampString = "521384552.843432"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CalcLogic"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.operationActive.getter : Swift.Int"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384912.818237"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
@@ -355,11 +355,11 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.102201"
+                  timestampString = "521384912.8209"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
@@ -370,12 +370,12 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.103914"
+                  timestampString = "521384912.82294"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "53">
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "58">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -387,70 +387,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373268.691435"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "CalcLogic"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.power.getter : Swift.Int"
-                  moduleName = "PPCalc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.111433"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.power.setter : Swift.Int"
-                  moduleName = "PPCalc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.113442"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.init () -&gt; PPCalc.CalcLogic"
-                  moduleName = "PPCalc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.115721"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "69">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BrainClass.swift"
-            timestampString = "521373269.033534"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -462,31 +399,31 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.output.getter : PPCalc.OutputAdapter"
+                  symbolName = "PPCalc.CalcLogic.power.getter : Swift.Int"
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.124481"
+                  timestampString = "521384912.829926"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
                   endingLineNumber = "15"
-                  offsetFromSymbolStart = "31">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PPCalc.CalcLogic.output.setter : PPCalc.OutputAdapter"
+                  symbolName = "PPCalc.CalcLogic.power.setter : Swift.Int"
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.12747"
+                  timestampString = "521384912.833206"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
                   endingLineNumber = "15"
-                  offsetFromSymbolStart = "56">
+                  offsetFromSymbolStart = "16">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -496,12 +433,12 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.130245"
+                  timestampString = "521384912.83601"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
                   endingLineNumber = "15"
-                  offsetFromSymbolStart = "105">
+                  offsetFromSymbolStart = "74">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -513,11 +450,74 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373269.463427"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "CalcLogic"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.output.getter : PPCalc.OutputAdapter"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384912.842937"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.output.setter : PPCalc.OutputAdapter"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384912.844717"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.init () -&gt; PPCalc.CalcLogic"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384912.846766"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "110">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainClass.swift"
+            timestampString = "521384552.843432"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "tapDigit(digit:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -529,11 +529,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373269.875523"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "tapDigit(digit:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -545,11 +545,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373270.26534"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "tapDigit(digit:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -561,55 +561,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373270.647246"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "tapDigit(digit:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BrainClass.swift"
-            timestampString = "521373271.028641"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "tapDigit(digit:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BrainClass.swift"
-            timestampString = "521373271.373434"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "tapDigit(digit:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BrainClass.swift"
-            timestampString = "521373272.791486"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -625,11 +577,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373273.115102"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "tapDigit(digit:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -641,7 +593,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373273.353778"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -657,7 +609,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373273.670602"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -673,11 +625,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373273.915819"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "tapDigit(digit:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -689,7 +641,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521373274.4217"
+            timestampString = "521384552.843432"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "tapDigit(digit:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainClass.swift"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -705,12 +673,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "tapUtility(symbol:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "tapDigit(digit:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -721,27 +689,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "tapUtility(symbol:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
+            landmarkName = "tapDigit(digit:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainClass.swift"
+            timestampString = "521384552.843432"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "tapUtility(symbol:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -753,11 +721,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "tapUtility(symbol:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainClass.swift"
+            timestampString = "521384552.843432"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "tapUtility(symbol:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainClass.swift"
+            timestampString = "521384552.843432"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "tapUtility(symbol:)"
             landmarkType = "7">
             <Locations>
@@ -769,12 +769,12 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.211719"
+                  timestampString = "521384912.935249"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "211">
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "274">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -784,12 +784,12 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.215215"
+                  timestampString = "521384912.937823"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "230">
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "296">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -801,11 +801,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "tapUtility(symbol:)"
             landmarkType = "7">
             <Locations>
@@ -817,12 +817,12 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.223578"
+                  timestampString = "521384912.949889"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "388">
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "502">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -832,12 +832,12 @@
                   moduleName = "PPCalc"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
-                  timestampString = "521377826.226606"
+                  timestampString = "521384912.95598"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "408">
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "528">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -849,11 +849,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "tapUtility(symbol:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -865,11 +865,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "tapUtility(symbol:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -881,11 +881,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "tapUtility(symbol:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -897,11 +897,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "tapUtility(symbol:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -913,11 +913,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "decimal()"
             landmarkType = "7">
          </BreakpointContent>
@@ -929,11 +929,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "decimal()"
             landmarkType = "7">
          </BreakpointContent>
@@ -945,11 +945,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "clearAllclear()"
             landmarkType = "7">
          </BreakpointContent>
@@ -961,13 +961,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BrainClass.swift"
-            timestampString = "521377637.120636"
+            timestampString = "521384552.843432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "clearAllclear()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainClass.swift"
+            timestampString = "521384880.947928"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "tapUtility(symbol:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.tapUtility (symbol : Swift.Int) -&gt; ()"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384913.012822"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1347">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.CalcLogic.tapUtility (symbol : Swift.Int) -&gt; ()"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Documents/GitRepository/PPCalc/BrainClass.swift"
+                  timestampString = "521384913.016689"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1385">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
