@@ -325,14 +325,14 @@
                                 <rect key="frame" x="0.0" y="226" width="375" height="441"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="ou6-cz-BoR" kind="embed" id="1cz-cj-frP"/>
+                                    <segue destination="ou6-cz-BoR" kind="embed" identifier="KeyboardControllerSegue" id="1cz-cj-frP"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TeJ-wg-lOl">
                                 <rect key="frame" x="0.0" y="98" width="375" height="134"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="o57-1d-XyA" kind="embed" id="sZ5-Af-nBa"/>
+                                    <segue destination="o57-1d-XyA" kind="embed" identifier="CalcScreenControllerSegue" id="sZ5-Af-nBa"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tc8-Al-T4a">
@@ -356,6 +356,10 @@
         <scene sceneID="1oF-S9-fg5">
             <objects>
                 <viewController id="ou6-cz-BoR" customClass="CalcKeybordController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B6W-zn-RmF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ynx-4h-I6H"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="32w-ag-x8R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -366,8 +370,11 @@
                                 <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="0.49167915239726029" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="y0i-Qm-Lnq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K2-Mt-aKK">
+                            <button opaque="NO" alpha="0.59999999999999998" tag="10014" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K2-Mt-aKK">
                                 <rect key="frame" x="0.0" y="0.0" width="93" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -376,6 +383,9 @@
                                 <variation key="displayGamut=sRGB-heightClass=regular-widthClass=compact">
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="Znl-9q-8P3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.59999999999999998" tag="10016" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45C-Fh-dYV">
                                 <rect key="frame" x="93" y="0.0" width="93" height="88"/>
@@ -386,6 +396,9 @@
                                 <variation key="displayGamut=sRGB-heightClass=regular-widthClass=compact">
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="vOB-da-DaL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujF-oK-lXc">
                                 <rect key="frame" x="186" y="0.0" width="96" height="88"/>
@@ -396,6 +409,9 @@
                                 <variation key="displayGamut=sRGB-heightClass=regular-widthClass=compact">
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="pAI-m2-03k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxH-xK-QZK">
                                 <rect key="frame" x="282" y="0.0" width="93" height="88"/>
@@ -403,6 +419,9 @@
                                 <color key="backgroundColor" red="0.86274509803921573" green="0.56862745098039214" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="/"/>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="EWF-nk-bbH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ho-Ac-FOH">
                                 <rect key="frame" x="0.0" y="88" width="93" height="88"/>
@@ -410,6 +429,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="fQx-rn-BRV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-Mi-qNF">
                                 <rect key="frame" x="93" y="88" width="93" height="88"/>
@@ -417,13 +439,19 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="7di-2V-s7j"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVc-0L-Mg9">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVc-0L-Mg9">
                                 <rect key="frame" x="186" y="88" width="96" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="WoM-Kr-bhT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2g-sx-zxO">
                                 <rect key="frame" x="282" y="88" width="93" height="88"/>
@@ -431,6 +459,9 @@
                                 <color key="backgroundColor" red="0.86274509803921573" green="0.56862745098039214" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="*"/>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="EO3-CS-Vxt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWH-TY-vP6">
                                 <rect key="frame" x="0.0" y="176" width="93" height="88"/>
@@ -438,6 +469,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="f4O-NN-DOl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHk-nH-8uk">
                                 <rect key="frame" x="93" y="176" width="93" height="88"/>
@@ -445,6 +479,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="ijw-h5-Weg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXQ-Me-FgE">
                                 <rect key="frame" x="186" y="176" width="96" height="88"/>
@@ -452,6 +489,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="3V8-9y-bY1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0I-xi-b9J">
                                 <rect key="frame" x="282" y="176" width="93" height="88"/>
@@ -459,6 +499,9 @@
                                 <color key="backgroundColor" red="0.86274509803921573" green="0.56862745098039214" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="oLH-uV-zmA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuD-ZL-CeO">
                                 <rect key="frame" x="0.0" y="264" width="93" height="88"/>
@@ -466,6 +509,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="gmE-Jo-yTc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hs-UM-hSR">
                                 <rect key="frame" x="93" y="264" width="93" height="88"/>
@@ -473,6 +519,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="QSx-c3-dlt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="665-pa-MRo">
                                 <rect key="frame" x="186" y="264" width="96" height="88"/>
@@ -480,6 +529,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="9Sf-Ae-Dth"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY1-sC-Q6P">
                                 <rect key="frame" x="282" y="264" width="93" height="88"/>
@@ -487,6 +539,9 @@
                                 <color key="backgroundColor" red="0.86274509803921573" green="0.56862745098039214" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="Em7-oo-B2i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10015" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfH-BB-aF0">
                                 <rect key="frame" x="186" y="352" width="96" height="90"/>
@@ -494,6 +549,9 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="lbL-dw-bZD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10013" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPk-zJ-UVE">
                                 <rect key="frame" x="282" y="352" width="96" height="90"/>
@@ -503,6 +561,9 @@
                                 <state key="normal" title="=">
                                     <color key="titleShadowColor" red="0.86274509803921573" green="0.56862745098039214" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="MEm-tr-Mwz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -510,12 +571,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjD-zU-aNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2879" y="547"/>
+            <point key="canvasLocation" x="-2879.1999999999998" y="546.47676161919048"/>
         </scene>
         <!--Calc Screen Controller-->
         <scene sceneID="5Z9-cP-nuu">
             <objects>
                 <viewController id="o57-1d-XyA" customClass="CalcScreenController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UAD-9a-PZn"/>
+                        <viewControllerLayoutGuide type="bottom" id="dNC-IO-ExW"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="csO-lG-gY6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -532,6 +597,9 @@
                     </view>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="screenLabel" destination="sbb-wk-ifk" id="3sb-8a-ppN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3z8-z5-K56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -540,8 +608,11 @@
         <!--View Controller-->
         <scene sceneID="Fqh-br-eRY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QDO-LH-JGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Fs1-Wf-BnX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ofo-nq-lYT"/>
+                        <viewControllerLayoutGuide type="bottom" id="DEe-hm-rE9"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bNU-WR-uSf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,6 +633,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDO-LH-JGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2879" y="21"/>
         </scene>

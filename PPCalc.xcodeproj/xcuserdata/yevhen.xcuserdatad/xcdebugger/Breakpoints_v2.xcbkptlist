@@ -2,4 +2,147 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/Calculator-master-3/Calculator/Brain.swift"
+            timestampString = "521357182.619954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "Brain"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.Brain.equation.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Downloads/Calculator-master-3/Calculator/Brain.swift"
+                  timestampString = "521357185.209869"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.Brain.equation.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Downloads/Calculator-master-3/Calculator/Brain.swift"
+                  timestampString = "521357185.217163"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.Brain.init () -&gt; PPCalc.Brain"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Downloads/Calculator-master-3/Calculator/Brain.swift"
+                  timestampString = "521357185.220998"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "91">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/Calculator-master-3/Calculator/Brain.swift"
+            timestampString = "521357182.619954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "Brain"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.Brain.__allocating_init () -&gt; PPCalc.Brain"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Downloads/Calculator-master-3/Calculator/Brain.swift"
+                  timestampString = "521357185.229443"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.Brain.__deallocating_deinit"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Downloads/Calculator-master-3/Calculator/Brain.swift"
+                  timestampString = "521357185.233046"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.Brain.deinit"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Downloads/Calculator-master-3/Calculator/Brain.swift"
+                  timestampString = "521357185.236731"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PPCalc.Brain.init () -&gt; PPCalc.Brain"
+                  moduleName = "PPCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yevhen/Downloads/Calculator-master-3/Calculator/Brain.swift"
+                  timestampString = "521357185.241781"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
