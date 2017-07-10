@@ -16,7 +16,7 @@ protocol OutputProtocol {
 }
 
 protocol Model {
-    func EnterEquation(equation: String)
+    func enterEquation(equation: String)
 }
 
 enum Operation: Int {
