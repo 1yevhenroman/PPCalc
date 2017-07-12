@@ -12,7 +12,7 @@ class CalcLogic: Model {
     var operationActive = 0
     var decimalPoint = 0
    
-    var power = 1 //NAFIGA???
+    var power = 1 //???
     
     var result: String = ""
     var output = OutputAdapter.shared
