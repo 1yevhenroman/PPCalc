@@ -27,7 +27,18 @@
 		15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */; };
 		15C196F41F12E0C600C7BE44 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EF1F12E0C600C7BE44 /* Validator.swift */; };
 		15C196F61F134EC500C7BE44 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196F51F134EC500C7BE44 /* DataController.swift */; };
+		15CA79BC1F15FA580021B7F4 /* PPCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15CA79BE1F15FA580021B7F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151576BE1F0E7F9C001190F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151576C51F0E7F9C001190F8;
+			remoteInfo = PPCalc;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		151576C61F0E7F9C001190F8 /* PPCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +63,9 @@
 		15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/OutputAdapter.swift"; sourceTree = "<group>"; };
 		15C196EF1F12E0C600C7BE44 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/Validator.swift"; sourceTree = "<group>"; };
 		15C196F51F134EC500C7BE44 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCalcTests.swift; sourceTree = "<group>"; };
+		15CA79BD1F15FA580021B7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15CA79B61F15FA570021B7F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,9 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				151576C81F0E7F9C001190F8 /* PPCalc */,
-				151577051F10D50C001190F8 /* Protected Entrance */,
 				151576CD1F0E7F9C001190F8 /* Main.storyboard */,
 				151576CB1F0E7F9C001190F8 /* ViewController.swift */,
+				151577051F10D50C001190F8 /* Protected Entrance */,
+				15CA79BA1F15FA580021B7F4 /* PPCalcTests */,
+				151576C71F0E7F9C001190F8 /* Products */,
 				151577041F10D4EF001190F8 /* Additional files */,
 			);
 			sourceTree = "<group>";
@@ -81,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				151576C61F0E7F9C001190F8 /* PPCalc.app */,
+				15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */,
 			);
 			name = Products;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		151576C81F0E7F9C001190F8 /* PPCalc */ = {
@@ -155,7 +178,6 @@
 		151577051F10D50C001190F8 /* Protected Entrance */ = {
 			isa = PBXGroup;
 			children = (
-				151576C71F0E7F9C001190F8 /* Products */,
 			);
 			name = "Protected Entrance";
 			path = PPCalc;
@@ -169,6 +191,15 @@
 			);
 			name = DataBase;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		15CA79BA1F15FA580021B7F4 /* PPCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */,
+				15CA79BD1F15FA580021B7F4 /* Info.plist */,
+			);
+			path = PPCalcTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +222,24 @@
 			productReference = 151576C61F0E7F9C001190F8 /* PPCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		15CA79B81F15FA570021B7F4 /* PPCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15CA79C21F15FA580021B7F4 /* Build configuration list for PBXNativeTarget "PPCalcTests" */;
+			buildPhases = (
+				15CA79B51F15FA570021B7F4 /* Sources */,
+				15CA79B61F15FA570021B7F4 /* Frameworks */,
+				15CA79B71F15FA570021B7F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15CA79BF1F15FA580021B7F4 /* PBXTargetDependency */,
+			);
+			name = PPCalcTests;
+			productName = PPCalcTests;
+			productReference = 15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +254,12 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2U8WSM4T5B;
 						ProvisioningStyle = Automatic;
+					};
+					15CA79B81F15FA570021B7F4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2U8WSM4T5B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 151576C51F0E7F9C001190F8;
 					};
 				};
 			};
@@ -222,6 +277,7 @@
 			projectRoot = "";
 			targets = (
 				151576C51F0E7F9C001190F8 /* PPCalc */,
+				15CA79B81F15FA570021B7F4 /* PPCalcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +290,13 @@
 				151576D71F0E7F9C001190F8 /* LaunchScreen.storyboard in Resources */,
 				151576D41F0E7F9C001190F8 /* Assets.xcassets in Resources */,
 				151576CF1F0E7F9C001190F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15CA79B71F15FA570021B7F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +326,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15CA79B51F15FA570021B7F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CA79BC1F15FA580021B7F4 /* PPCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15CA79BF1F15FA580021B7F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151576C51F0E7F9C001190F8 /* PPCalc */;
+			targetProxy = 15CA79BE1F15FA580021B7F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		151576CD1F0E7F9C001190F8 /* Main.storyboard */ = {
@@ -407,6 +486,36 @@
 			};
 			name = Release;
 		};
+		15CA79C01F15FA580021B7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2U8WSM4T5B;
+				INFOPLIST_FILE = PPCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EugeneRoman.PPCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPCalc.app/PPCalc";
+			};
+			name = Debug;
+		};
+		15CA79C11F15FA580021B7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2U8WSM4T5B;
+				INFOPLIST_FILE = PPCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EugeneRoman.PPCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPCalc.app/PPCalc";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,6 +536,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		15CA79C21F15FA580021B7F4 /* Build configuration list for PBXNativeTarget "PPCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CA79C01F15FA580021B7F4 /* Debug */,
+				15CA79C11F15FA580021B7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

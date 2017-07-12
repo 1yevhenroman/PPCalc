@@ -81,9 +81,10 @@ extension String {
 
 class PerfectedBrain: Model {
     
-    private var input: String = "0"
+    private var input: String = ""
     private let regex: String = "[-+]?\\d+.?\\d+"
-    private var index = 0
+    private var index: Int = 0
+    private var firstEntrance: Bool = true
     private var counterForNumber: Int = 0
     static let shared = PerfectedBrain()
     var output = OutputAdapter.shared
@@ -103,8 +104,9 @@ class PerfectedBrain: Model {
         
         var result: Double = 0//ініціалізація
         let parse = input.stringsMatchingRegularExpression(expression: regex)
-        if parse?[counterForNumber] != nil {
-            result = Double(parse![counterForNumber])!
+        
+        if ((parse?[counterForNumber]) != nil)  {
+            result = Double((parse?[counterForNumber])!)!
             counterForNumber += 1
         }
         return result
@@ -156,6 +158,10 @@ class PerfectedBrain: Model {
     private func reset() {
         index = 0
         counterForNumber = 0
+        input = ""
+        firstEntrance = true
+        output.presentResult(result: "0")
+        
     }
     private func calculate(_ equation: String)->Double {
         input = equation
@@ -166,4 +172,50 @@ class PerfectedBrain: Model {
     func enterEquation (equation: String) {
         output.presentResult(result:String(calculate(equation)))
     }
+    func formingEquationDigit(_ digit: Int) {
+            input += String (digit)
+        
+    }
+    func formingEquationSymbol(symbol: Int) {
+        
+        switch symbol {
+        case Operation.pls.rawValue: input += String ("+")
+        case Operation.mns.rawValue: input += String ("-")
+        case Operation.mul.rawValue: input += String ("*")
+        case Operation.div.rawValue: input += String ("/")
+        case Operation.equal.rawValue: output.presentResult(result:String(calculate(input)))
+        case Operation.clear.rawValue: reset()
+        default: output.presentResult(result:String(calculate(input)))
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
