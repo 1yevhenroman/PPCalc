@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 extension String {
     
     subscript (i: Int) -> Character {
@@ -89,52 +88,56 @@ class PerfectedBrain: Model {
     static let shared = PerfectedBrain()
     var output = OutputAdapter.shared
     
-    //Підглядає на карент елемент
-    private func peek()->Character {
-        
-        let symbol = input [index] as Character
+    //peek on current symbol
+    private func peek()->String {
+        let symbol = input [index] as String
         return symbol
     }
-    private func get()->Character {
-        let symbol = input [index] as Character
-        index += 1
-        return symbol
+    //get current symbol and move pointer to the next
+//    private func get()->Character {
+//        let symbol = input [index] as Character
+//        index += 1
+//        return symbol
+//    }
+    private func get(symbol: String)->Bool {
+        if input.range(of: symbol) != nil {
+            return true
+        }
+         return false
     }
     private func number()->Double {
-        
-        var result: Double = 0//ініціалізація
-        let parse = input.stringsMatchingRegularExpression(expression: regex)
-        
-        if ((parse?[counterForNumber]) != nil)  {
-            result = Double((parse?[counterForNumber])!)!
+        var num = input.components(separatedBy: ["+", "*", "/","-"])
+        if let result: Double = CDouble(num[counterForNumber]) {
             counterForNumber += 1
-        }
-        return result
-    }
-    private func factor()->Double {
-        //має бути як '0'
-        if ((peek() >= Character("0") && peek() <= Character("9")) || peek() == Character(".")) {
-            return number()
-        }
-        else if (peek() == Character("(")) {
-            //Ignore warning
-            get()// '('
-            let result:Double = expression()
-            //Ignore warning
-            get()//')'
             return result
         }
-        else if(peek() == Character("-")) {
-            //Ignore warning
-            get()
+        else {
+            counterForNumber += 1
+            return number()
+        }
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////
+    private func factor()->Double {
+        if ((peek() >= "0" && peek() <= "9") || peek() == ".") {
+            return number()
+        }
+        else if (peek() == "(") {
+            index+=1 //'('
+            let result:Double = expression()
+            index+=1 //')'
+            return result
+        }
+        else if(peek() == "-") {
+            index+=1
             return -expression()
         }
         return 0 //error
     }
+    ///
     private func term()->Double {
-        var result:Double = factor()
-        while (peek() == Character("*") || peek() == Character("/")) {
-            if (get() == Character ("*")) {
+        var result: Double = factor()
+        while ((peek() == "*") || (peek() == "/")) {
+            if get(symbol: "*") {
                 result *= factor()
             }
             else {
@@ -143,16 +146,19 @@ class PerfectedBrain: Model {
         }
         return result
     }
+    ///
     private func expression()->Double {
         var result:Double = term()
-        while (peek() == Character("+") || peek() == Character("-")) {
-            if (get() == Character ("+")) {
+        
+        repeat {
+            if get(symbol: "+") {
                 result += factor()
             }
             else {
                 result -= factor()
             }
         }
+        while (peek() == "+") || (peek() == "-")
         return result
     }
     private func reset() {
@@ -165,7 +171,7 @@ class PerfectedBrain: Model {
     }
     private func calculate(_ equation: String)->Double {
         input = equation
-        var result: Double = expression()
+        let result: Double = expression()
         reset()
         return result
     }
@@ -177,7 +183,6 @@ class PerfectedBrain: Model {
         
     }
     func formingEquationSymbol(symbol: Int) {
-        
         switch symbol {
         case Operation.pls.rawValue: input += String ("+")
         case Operation.mns.rawValue: input += String ("-")
@@ -187,8 +192,6 @@ class PerfectedBrain: Model {
         case Operation.clear.rawValue: reset()
         default: output.presentResult(result:String(calculate(input)))
         }
-        
-        
     }
     
     

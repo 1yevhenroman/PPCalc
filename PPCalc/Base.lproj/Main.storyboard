@@ -99,7 +99,7 @@
             </objects>
             <point key="canvasLocation" x="1927" y="-14"/>
         </scene>
-        <!--User Login Controller-->
+        <!--Title-->
         <scene sceneID="I92-Nc-fVO">
             <objects>
                 <viewController id="i7K-q6-AG6" customClass="UserLoginController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,6 +166,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="gmh-ZH-Tcf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="MXS-OK-0u7"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="yid-fu-9rp" kind="show" identifier="logged" id="1G8-mu-Yf3"/>
