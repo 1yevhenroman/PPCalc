@@ -25,7 +25,6 @@
 		1574CC6C1F15C32700CA7570 /* PerfectedBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574CC6B1F15C32700CA7570 /* PerfectedBrain.swift */; };
 		15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */; };
 		15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */; };
-		15C196F41F12E0C600C7BE44 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EF1F12E0C600C7BE44 /* Validator.swift */; };
 		15C196F61F134EC500C7BE44 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196F51F134EC500C7BE44 /* DataController.swift */; };
 		15CA79BC1F15FA580021B7F4 /* PPCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +60,6 @@
 		1574CC6B1F15C32700CA7570 /* PerfectedBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectedBrain.swift; sourceTree = "<group>"; };
 		15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/InputAdapter.swift"; sourceTree = "<group>"; };
 		15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/OutputAdapter.swift"; sourceTree = "<group>"; };
-		15C196EF1F12E0C600C7BE44 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/Validator.swift"; sourceTree = "<group>"; };
 		15C196F51F134EC500C7BE44 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCalcTests.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */,
 				151577021F10CB32001190F8 /* Protocols.swift */,
 				15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */,
-				15C196EF1F12E0C600C7BE44 /* Validator.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -316,7 +313,6 @@
 				151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */,
 				151576D21F0E7F9C001190F8 /* PPCalc.xcdatamodeld in Sources */,
 				15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */,
-				15C196F41F12E0C600C7BE44 /* Validator.swift in Sources */,
 				151577031F10CB32001190F8 /* Protocols.swift in Sources */,
 				151576F31F10C7E3001190F8 /* CalcMainController.swift in Sources */,
 				15C196F61F134EC500C7BE44 /* DataController.swift in Sources */,

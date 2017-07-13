@@ -12,8 +12,7 @@ class Perfected: Model {
     
     static let shared = Perfected()
     
-    var operations: Dictionary< Operation, TypeOperation> =
-        [
+    var operations: Dictionary< Operation, TypeOperation> = [
             
             .pi : TypeOperation.constant(Double.pi),
             .sqrt : TypeOperation.unaryOperation(sqrt),
@@ -23,42 +22,22 @@ class Perfected: Model {
             .div : TypeOperation.binaryOperation({$0 / $1}),
             .pls : TypeOperation.binaryOperation({$0 + $1}),
             .mns : TypeOperation.binaryOperation({$0 - $1}),
-            .equal : TypeOperation.equals
-    ]
+            .per :TypeOperation.unaryOperation({$0/100}),
+            .equal : TypeOperation.equals,
+            .clear: TypeOperation.clear
+        ]
     
     
     var input: String = ""
-    private let regex: String = "[-+]?\\d+.?\\d+"
-    //    private var counterForNumber: Int = 0
-    //    private var x: Double = 0
-    //    private var y: Double = 0
-    //
-    //    private var xSet: Bool = false
-    //    private var ySet: Bool = false
     var output = OutputAdapter.shared
     private var accumulator: Double?
     
-    //pretty good working
-    //    private func number() {
-    //        var num = input.components(separatedBy: ["+", "*", "/","-"])
-    //
-    //        if !(xSet && ySet) {
-    //            x = Double(num[0])!
-    //            y = Double(num[1])!
-    //            return
-    //        }
-    //        if !xSet {
-    //            x = Double(num[0])!
-    //        }
-    //        else {
-    //            y = Double(num[0])!
-    //        }
-    //    }
     enum TypeOperation {
         case constant(Double)
         case unaryOperation((Double)->Double)
         case binaryOperation((Double,Double)->Double)
         case equals
+        case clear
     }
     
     struct PendingBinaryOperation {
@@ -85,9 +64,13 @@ class Perfected: Model {
                     accumulator=nil
                 }
             case .equals():
-                performPendingBinaryOperation()            }
+                performPendingBinaryOperation()
+            case .clear():
+                accumulator = nil
+                input = " "
+            }
         }
-        //output.presentResult(result: result)
+        output.presentResult(result: result)
     }
     
     func performPendingBinaryOperation(){
@@ -100,14 +83,12 @@ class Perfected: Model {
     func setOperand( _ operand: String) {
         if let number = Double(operand)  {
             accumulator = number
-        }
-        
-        
-        
+        }  
     }
     func printOnScreen () {
-        output.presentResult(result: input)
+        output.presentResult(result: result)
     }
+    
     var result: String {
         get {
             if let res = accumulator {
@@ -128,9 +109,5 @@ class Perfected: Model {
     func enterEquation(equation: String) {
         
     }
-    
-    
-    
-    
-    
+
 }
