@@ -121,12 +121,12 @@ class PerfectedBrain: Model {
         if ((peek() >= "0" && peek() <= "9") || peek() == ".") {
             return number()
         }
-        else if (peek() == "(") {
-            index+=1 //'('
-            let result:Double = expression()
-            index+=1 //')'
-            return result
-        }
+//        else if (peek() == "(") {
+//            index+=1 //'('
+//            let result:Double = expression()
+//            index+=1 //')'
+//            return result
+//        }
         else if(peek() == "-") {
             index+=1
             return -expression()
@@ -140,7 +140,7 @@ class PerfectedBrain: Model {
             if get(symbol: "*") {
                 result *= factor()
             }
-            else {
+            else if get(symbol: "/") {
                 result /= factor()
             }
         }
@@ -175,8 +175,8 @@ class PerfectedBrain: Model {
         reset()
         return result
     }
-    func enterEquation (equation: String) {
-        output.presentResult(result:String(calculate(equation)))
+    func enterEquation(equation: String) {
+        
     }
     func formingEquationDigit(_ digit: Int) {
             input += String (digit)

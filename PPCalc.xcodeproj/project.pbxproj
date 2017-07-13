@@ -112,6 +112,7 @@
 		151576C81F0E7F9C001190F8 /* PPCalc */ = {
 			isa = PBXGroup;
 			children = (
+				1574CC6B1F15C32700CA7570 /* PerfectedBrain.swift */,
 				151576E71F0EF7D1001190F8 /* Frameworks */,
 				151576EA1F0EF807001190F8 /* Calculator */,
 			);
@@ -139,12 +140,11 @@
 		151576EB1F0EF810001190F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1574CC6B1F15C32700CA7570 /* PerfectedBrain.swift */,
-				151577021F10CB32001190F8 /* Protocols.swift */,
+				151577061F12361D001190F8 /* BrainClass.swift */,
 				15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */,
+				151577021F10CB32001190F8 /* Protocols.swift */,
 				15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */,
 				15C196EF1F12E0C600C7BE44 /* Validator.swift */,
-				151577061F12361D001190F8 /* BrainClass.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
