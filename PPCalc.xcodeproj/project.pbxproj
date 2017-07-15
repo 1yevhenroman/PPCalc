@@ -32,6 +32,9 @@
 		154723EB1F19305100207E63 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723EA1F19305100207E63 /* login.png */; };
 		154723ED1F1955B300207E63 /* TouchIDWithLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723EC1F1955B300207E63 /* TouchIDWithLabel.png */; };
 		154723EF1F19582500207E63 /* usingTouchID.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723EE1F19582500207E63 /* usingTouchID.png */; };
+		154B583E1F1A6AEB003571F5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B583D1F1A6AEB003571F5 /* HistoryViewController.swift */; };
+		154B58411F1A6EE9003571F5 /* HistoryViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B58401F1A6EE9003571F5 /* HistoryViewControllerTableViewCell.swift */; };
+		154B58441F1AA50D003571F5 /* calculatorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 154B58431F1AA50D003571F5 /* calculatorIcon.png */; };
 		15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */; };
 		15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */; };
 		15C196F61F134EC500C7BE44 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196F51F134EC500C7BE44 /* DataController.swift */; };
@@ -76,6 +79,9 @@
 		154723EA1F19305100207E63 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login.png; path = "../../../../Desktop/Картинки для PPCalc/login.png"; sourceTree = "<group>"; };
 		154723EC1F1955B300207E63 /* TouchIDWithLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TouchIDWithLabel.png; path = "../../../../Desktop/Картинки для PPCalc/TouchIDWithLabel.png"; sourceTree = "<group>"; };
 		154723EE1F19582500207E63 /* usingTouchID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = usingTouchID.png; path = "../../../../Desktop/Картинки для PPCalc/usingTouchID.png"; sourceTree = "<group>"; };
+		154B583D1F1A6AEB003571F5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		154B58401F1A6EE9003571F5 /* HistoryViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		154B58431F1AA50D003571F5 /* calculatorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calculatorIcon.png; path = "../../../../Desktop/Картинки для PPCalc/calculatorIcon.png"; sourceTree = "<group>"; };
 		15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/InputAdapter.swift"; sourceTree = "<group>"; };
 		15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/OutputAdapter.swift"; sourceTree = "<group>"; };
 		15C196F51F134EC500C7BE44 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -106,10 +112,11 @@
 		151576BD1F0E7F9C001190F8 = {
 			isa = PBXGroup;
 			children = (
+				154B583F1F1A6E6F003571F5 /* CalculatorHistory */,
 				151576C81F0E7F9C001190F8 /* PPCalc */,
 				151576CD1F0E7F9C001190F8 /* Main.storyboard */,
 				151576CB1F0E7F9C001190F8 /* ViewController.swift */,
-				151577051F10D50C001190F8 /* Protected Entrance */,
+				154B58421F1A7B1C003571F5 /* Login/Signup page */,
 				15CA79BA1F15FA580021B7F4 /* PPCalcTests */,
 				151576C71F0E7F9C001190F8 /* Products */,
 				151577041F10D4EF001190F8 /* Additional files */,
@@ -177,8 +184,6 @@
 		151577041F10D4EF001190F8 /* Additional files */ = {
 			isa = PBXGroup;
 			children = (
-				151576E01F0EC6BA001190F8 /* UserLoginController.swift */,
-				151576E21F0EC7CD001190F8 /* UserSignUpController.swift */,
 				151576F01F0F5CAD001190F8 /* ProtectedViewController.swift */,
 				151576D31F0E7F9C001190F8 /* Assets.xcassets */,
 				151576D51F0E7F9C001190F8 /* LaunchScreen.storyboard */,
@@ -190,17 +195,10 @@
 			path = PPCalc;
 			sourceTree = "<group>";
 		};
-		151577051F10D50C001190F8 /* Protected Entrance */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Protected Entrance";
-			path = PPCalc;
-			sourceTree = "<group>";
-		};
 		154723E31F19134200207E63 /* Additional materials for project */ = {
 			isa = PBXGroup;
 			children = (
+				154B58431F1AA50D003571F5 /* calculatorIcon.png */,
 				154723EE1F19582500207E63 /* usingTouchID.png */,
 				154723EC1F1955B300207E63 /* TouchIDWithLabel.png */,
 				154723EA1F19305100207E63 /* login.png */,
@@ -213,6 +211,25 @@
 				154723DE1F19133900207E63 /* 1487754894_942418.jpg */,
 			);
 			name = "Additional materials for project";
+			sourceTree = "<group>";
+		};
+		154B583F1F1A6E6F003571F5 /* CalculatorHistory */ = {
+			isa = PBXGroup;
+			children = (
+				154B583D1F1A6AEB003571F5 /* HistoryViewController.swift */,
+				154B58401F1A6EE9003571F5 /* HistoryViewControllerTableViewCell.swift */,
+			);
+			name = CalculatorHistory;
+			sourceTree = "<group>";
+		};
+		154B58421F1A7B1C003571F5 /* Login/Signup page */ = {
+			isa = PBXGroup;
+			children = (
+				151576E01F0EC6BA001190F8 /* UserLoginController.swift */,
+				151576E21F0EC7CD001190F8 /* UserSignUpController.swift */,
+			);
+			name = "Login/Signup page";
+			path = PPCalc;
 			sourceTree = "<group>";
 		};
 		15C197071F135D4200C7BE44 /* DataBase */ = {
@@ -323,6 +340,7 @@
 				154723E21F19133900207E63 /* 1487754894_942418.jpg in Resources */,
 				151576D71F0E7F9C001190F8 /* LaunchScreen.storyboard in Resources */,
 				151576D41F0E7F9C001190F8 /* Assets.xcassets in Resources */,
+				154B58441F1AA50D003571F5 /* calculatorIcon.png in Resources */,
 				154723E11F19133900207E63 /* wpadne.jpg in Resources */,
 				151576CF1F0E7F9C001190F8 /* Main.storyboard in Resources */,
 				154723EF1F19582500207E63 /* usingTouchID.png in Resources */,
@@ -352,9 +370,11 @@
 				15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */,
 				151576E31F0EC7CD001190F8 /* UserSignUpController.swift in Sources */,
 				151576E11F0EC6BA001190F8 /* UserLoginController.swift in Sources */,
+				154B583E1F1A6AEB003571F5 /* HistoryViewController.swift in Sources */,
 				151576CC1F0E7F9C001190F8 /* ViewController.swift in Sources */,
 				151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */,
 				151576CA1F0E7F9C001190F8 /* AppDelegate.swift in Sources */,
+				154B58411F1A6EE9003571F5 /* HistoryViewControllerTableViewCell.swift in Sources */,
 				151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */,
 				151576D21F0E7F9C001190F8 /* PPCalc.xcdatamodeld in Sources */,
 				15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */,

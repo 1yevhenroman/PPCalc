@@ -16,11 +16,17 @@ class CalcScreenController: UIViewController {
     
     func presentResult(_ result: String) {
         screenLabel.text = result
+        checkForSecretMode()
     }
     override func viewDidLoad() {
         outputAdapter.resultDisplay = self
         super.viewDidLoad()
-
+    }
+    func checkForSecretMode() {
+        if screenLabel.text == "1415926535" {
+           self.performSegue(withIdentifier: "loginView", sender: self)
+        }
     }
 
+    
 }

@@ -32,38 +32,16 @@ class CalcMainController: UIViewController {
             keyboard.onNumTap = { [weak self] num in self?.onNumericTap(num: num) }
             keyboard.onUtilityTap = { [weak self] symbol in self?.onUtilityTap(symbol: symbol) }
         }
+        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     
 }

@@ -11,18 +11,10 @@ import LocalAuthentication
 
 class UserLoginController: UIViewController {
 
-//    @IBOutlet weak var userEmailTextField: UITextField!
-//    @IBOutlet weak var userPasswordTextField: UITextField!
-//    @IBOutlet weak var userRepeatedPasswordTextField: UITextField!
-   // private var logged: Bool = false
+
     
-    /*
-     This method gets called when the users clicks on the
-     login button in the user interface.
-     
-     - parameter sender: a reference to the button that has been touched
-     */
-    @IBAction func loginButtonClicked(sender: UIButton) {
+    @IBAction func touchIdButtonClicked(_ sender: UIButton) {
+    
         
         // 1. Create a authentication context
         let authenticationContext = LAContext()
@@ -179,7 +171,9 @@ class UserLoginController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //self.performSegue(withIdentifier: "logged", sender: self)
+        segue.prepareForInterfaceBuilder()
+        //self.performSegue(withIdentifier: "loginView", sender: self)
+        
         //self.performSegue(withIdentifier: "signUpView", sender: self)
 
     }
