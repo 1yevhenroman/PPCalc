@@ -2,12 +2,12 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Access" representedClassName="Access" syncable="YES" codeGenerationType="class">
         <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="getNote" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" syncable="YES"/>
+        <relationship name="getNote" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NoteEntity" syncable="YES"/>
         <relationship name="keyToUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" syncable="YES"/>
     </entity>
-    <entity name="Notes" representedClassName="Notes" syncable="YES" codeGenerationType="class">
-        <attribute name="noteForCalc" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="noteTokey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Access" syncable="YES"/>
+    <entity name="NoteEntity" representedClassName="NoteEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberForNote" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
         <attribute name="userLogin" optional="YES" attributeType="String" syncable="YES"/>
@@ -15,8 +15,8 @@
         <relationship name="noteFromKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Access" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Users" positionX="-632" positionY="-198" width="128" height="88"/>
-        <element name="Notes" positionX="-182" positionY="108" width="128" height="73"/>
         <element name="Access" positionX="-398" positionY="-45" width="128" height="88"/>
+        <element name="NoteEntity" positionX="-182" positionY="108" width="128" height="75"/>
+        <element name="Users" positionX="-632" positionY="-198" width="128" height="88"/>
     </elements>
 </model>
