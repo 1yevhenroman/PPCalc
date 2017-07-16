@@ -9,22 +9,24 @@
 import UIKit
 
 class UserSignUpController: UIViewController {
-//    
-//    @IBOutlet weak var userSignUpLoginField: UITextField!
-//    @IBOutlet weak var userSignUpPasswordField: UITextField!
-//    @IBOutlet weak var userSignUpREpeatPassword: UITextField!
-//    
-//    @IBAction func userSignUpButton(_ sender: UIButton) {
-//        
-////        let userLogin = userSignUpLoginField.text
-////        let userPassword = userSignUpPasswordField.text
-////        let userRePassword = userSignUpREpeatPassword.text
-////        
-//        
-//    }
-//    
-//    
+    
+   
+    @IBOutlet weak var userSignUpLoginField: UITextField!
+    @IBOutlet weak var userSignUpPasswordField: UITextField!
+    @IBOutlet weak var userSignUpRepeatPassword: UITextField!
+   
+    
+    @IBAction func userSignUpButton(_ sender: UIButton) {
         
+//        let userLogin = userSignUpLoginField.text
+//        let userPassword = userSignUpPasswordField.text
+//        let userRePassword = userSignUpREpeatPassword.text
+//        
+        
+    }
+    
+    
+    
     
     
     
