@@ -37,6 +37,7 @@
 		15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */; };
 		15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */; };
 		15CA79BC1F15FA580021B7F4 /* PPCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */; };
+		15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCalcTests.swift; sourceTree = "<group>"; };
 		15CA79BD1F15FA580021B7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcHistoryViewController.swift; path = ../CalcHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				151576C81F0E7F9C001190F8 /* PPCalc */,
-				154B58421F1A7B1C003571F5 /* Login/Signup page */,
 				15CA79BA1F15FA580021B7F4 /* PPCalcTests */,
 				151576C71F0E7F9C001190F8 /* Products */,
 				151577041F10D4EF001190F8 /* Additional files */,
 				154B58451F1ABE9D003571F5 /* Frameworks */,
+				15C197071F135D4200C7BE44 /* DataBase */,
+				151576EA1F0EF807001190F8 /* Calculator */,
+				154723E31F19134200207E63 /* Additional materials for project */,
+				154B58421F1A7B1C003571F5 /* Login/Signup page */,
 				151576CD1F0E7F9C001190F8 /* Main.storyboard */,
 			);
 			sourceTree = "<group>";
@@ -131,11 +136,9 @@
 		151576C81F0E7F9C001190F8 /* PPCalc */ = {
 			isa = PBXGroup;
 			children = (
-				15C197071F135D4200C7BE44 /* DataBase */,
 				151576CB1F0E7F9C001190F8 /* ViewController.swift */,
+				15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */,
 				158499881F1BF3A600EF07A4 /* HistoryViewController.swift */,
-				154723E31F19134200207E63 /* Additional materials for project */,
-				151576EA1F0EF807001190F8 /* Calculator */,
 			);
 			path = PPCalc;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				151576ED1F0EF820001190F8 /* Control */,
 			);
 			name = Calculator;
+			path = PPCalc;
 			sourceTree = "<group>";
 		};
 		151576EB1F0EF810001190F8 /* Model */ = {
@@ -164,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				151576F21F10C7E3001190F8 /* CalcMainController.swift */,
-				151576F41F10C826001190F8 /* CalcScreenController.swift */,
 				151576F61F10C857001190F8 /* CalcKeybordController.swift */,
+				151576F41F10C826001190F8 /* CalcScreenController.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 				154723DE1F19133900207E63 /* 1487754894_942418.jpg */,
 			);
 			name = "Additional materials for project";
+			path = PPCalc;
 			sourceTree = "<group>";
 		};
 		154B58421F1A7B1C003571F5 /* Login/Signup page */ = {
@@ -225,7 +230,6 @@
 				151576D01F0E7F9C001190F8 /* PPCalc.xcdatamodeld */,
 			);
 			name = DataBase;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		15CA79BA1F15FA580021B7F4 /* PPCalcTests */ = {
@@ -359,6 +363,7 @@
 				151576CC1F0E7F9C001190F8 /* ViewController.swift in Sources */,
 				151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */,
 				158499891F1BF3A600EF07A4 /* HistoryViewController.swift in Sources */,
+				15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */,
 				151576CA1F0E7F9C001190F8 /* AppDelegate.swift in Sources */,
 				151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */,
 				151576D21F0E7F9C001190F8 /* PPCalc.xcdatamodeld in Sources */,

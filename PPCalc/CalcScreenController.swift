@@ -7,11 +7,11 @@
 //
 
 import UIKit
+let notificationForSavingResult = "needToSaveResult"
 
 class CalcScreenController: UIViewController {
 
     @IBOutlet var screenLabel: UILabel!
-    
     let outputAdapter = OutputAdapter.shared
     
     func presentResult(_ result: String) {
@@ -21,12 +21,19 @@ class CalcScreenController: UIViewController {
     override func viewDidLoad() {
         outputAdapter.resultDisplay = self
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(sendResultForSaving),
+                                               name: NSNotification.Name(rawValue: notificationForSendResult),
+                                               object: nil)
     }
     func checkForSecretMode() {
         if screenLabel.text == "1415926535" {
            self.performSegue(withIdentifier: "loginView", sender: self)
         }
     }
-
+    func sendResultForSaving() {
+    NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationForSavingResult), object: nil, userInfo: ["result": screenLabel.text!])
+        print("Notification send to history")
+    }
     
 }
