@@ -8,8 +8,9 @@
 
 import UIKit
 import CoreData
+
 class CalcHistoryViewController: UITableViewController {
-var tmp = "0"
+    var numberForSaving = "0"
     var noteItems = [NSManagedObject]()
     
     func resultReceived(notification: Notification) {
@@ -18,7 +19,7 @@ var tmp = "0"
         debugPrint(result)
          debugPrint(result as! String)
         savingNumber(result: result as! String)
-        tmp = result as! String
+        numberForSaving = result as! String
         
     }
     func savingNumber(result: String) {
@@ -47,7 +48,7 @@ var tmp = "0"
         let entity = NSEntityDescription.entity(forEntityName: "NoteEntity", in: managedContext)
         let item = NSManagedObject(entity: entity!, insertInto: managedContext)
         item.setValue(noteTosave, forKey: "note")
-        item.setValue(tmp, forKey: "numberForNote")
+        item.setValue(numberForSaving, forKey: "numberForNote")
         do {
             try managedContext.save()
             noteItems.append(item)

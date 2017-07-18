@@ -8,10 +8,52 @@
 
 import UIKit
 import LocalAuthentication
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class UserLoginController: UIViewController {
-
-
+class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    let facebookLoginButton: FBSDKLoginButton = {
+    let loginButton = FBSDKLoginButton()
+    loginButton.readPermissions = ["email"]
+        return loginButton
+    }()
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        
+    }
+    func loginButtonDidLogOut (loginButton: FBSDKLoginButton, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        print("complete login")
+        fetchProfile()
+    }
+    func fetchProfile() {
+        
+        print("fetch profile")
+        let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"first_name, email, picture.type(large)"])
+        
+        graphRequest.start(completionHandler: { (connection, parameters, error) -> Void in
+            if ((error) != nil)
+            {
+                // Process error
+                print("Error: \(String(describing: error))")
+            }
+            else
+            {
+                guard let email:[String:AnyObject] = parameters as? [String : Any] as [String : AnyObject]? else { return print("error with getting email") }
+                print(email["email"]!)
+                
+            }
+        })
+        
+    }
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        
+    }
+    public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        
+    }
+    func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!)->Bool {
+        return true
+    }
     
     @IBAction func touchIdButtonClicked(_ sender: UIButton) {
     
@@ -182,11 +224,17 @@ class UserLoginController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       // let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector//(UIInputViewController.dismissKeyboard))
-        //view.addGestureRecognizer(tap)
-        // Do any additional setup after loading the view.
+        view.addSubview(facebookLoginButton)
+        facebookLoginButton.center = view.center
+        //Якщо будуть трабли перевірити це
+        facebookLoginButton.delegate = self
+        
+        if (FBSDKAccessToken.current()) != nil {
+            fetchProfile()
+        }
+        
     }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

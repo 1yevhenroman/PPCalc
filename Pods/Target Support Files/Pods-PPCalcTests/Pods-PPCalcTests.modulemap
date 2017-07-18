@@ -1,0 +1,6 @@
+framework module Pods_PPCalcTests {
+  umbrella header "Pods-PPCalcTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
