@@ -15,30 +15,21 @@
 		151576D41F0E7F9C001190F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151576D31F0E7F9C001190F8 /* Assets.xcassets */; };
 		151576D71F0E7F9C001190F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151576D51F0E7F9C001190F8 /* LaunchScreen.storyboard */; };
 		151576E11F0EC6BA001190F8 /* UserLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576E01F0EC6BA001190F8 /* UserLoginController.swift */; };
-		151576E31F0EC7CD001190F8 /* UserSignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576E21F0EC7CD001190F8 /* UserSignUpController.swift */; };
 		151576E91F0EF7D2001190F8 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151576E81F0EF7D2001190F8 /* LocalAuthentication.framework */; };
 		151576F31F10C7E3001190F8 /* CalcMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576F21F10C7E3001190F8 /* CalcMainController.swift */; };
 		151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576F41F10C826001190F8 /* CalcScreenController.swift */; };
 		151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576F61F10C857001190F8 /* CalcKeybordController.swift */; };
 		151577031F10CB32001190F8 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151577021F10CB32001190F8 /* Protocols.swift */; };
-		154723DF1F19133900207E63 /* p-16221.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723DB1F19133900207E63 /* p-16221.jpg */; };
-		154723E01F19133900207E63 /* 333459-2880x1800.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723DC1F19133900207E63 /* 333459-2880x1800.jpg */; };
-		154723E11F19133900207E63 /* wpadne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723DD1F19133900207E63 /* wpadne.jpg */; };
-		154723E21F19133900207E63 /* 1487754894_942418.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723DE1F19133900207E63 /* 1487754894_942418.jpg */; };
-		154723E51F1925A900207E63 /* Touch_ID-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723E41F1925A900207E63 /* Touch_ID-512.png */; };
-		154723E71F1926C800207E63 /* Wallpapersxl_Illuminati_Matrix_B_W_266347_1920x1080.jpg.d27871d21f242491c7c4323d90027459.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723E61F1926C800207E63 /* Wallpapersxl_Illuminati_Matrix_B_W_266347_1920x1080.jpg.d27871d21f242491c7c4323d90027459.jpg */; };
 		154723E91F1927AC00207E63 /* Touch_ID-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723E81F1927AC00207E63 /* Touch_ID-512 copy.png */; };
-		154723EB1F19305100207E63 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723EA1F19305100207E63 /* login.png */; };
-		154723ED1F1955B300207E63 /* TouchIDWithLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723EC1F1955B300207E63 /* TouchIDWithLabel.png */; };
-		154723EF1F19582500207E63 /* usingTouchID.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723EE1F19582500207E63 /* usingTouchID.png */; };
-		154B58441F1AA50D003571F5 /* calculatorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 154B58431F1AA50D003571F5 /* calculatorIcon.png */; };
 		154B58471F1ABE9E003571F5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154B58461F1ABE9E003571F5 /* CoreData.framework */; };
 		156716751F1DFA7000014EA5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156716731F1DFA7000014EA5 /* FBSDKCoreKit.framework */; };
 		156716761F1DFA7000014EA5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156716741F1DFA7000014EA5 /* FBSDKLoginKit.framework */; };
-		158499891F1BF3A600EF07A4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158499881F1BF3A600EF07A4 /* HistoryViewController.swift */; };
 		1584998B1F1BF3C200EF07A4 /* BrainClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584998A1F1BF3C200EF07A4 /* BrainClass.swift */; };
+		159DEEBF1F1F28510053A330 /* backgroundForTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 159DEEBE1F1F28510053A330 /* backgroundForTableView.png */; };
 		15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */; };
 		15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */; };
+		15C4390B1F1F4EF100D39805 /* CalcNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C4390A1F1F4EF100D39805 /* CalcNoteCell.swift */; };
+		15C4390D1F1F6B5300D39805 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C4390C1F1F6B5300D39805 /* File.swift */; };
 		15CA79BC1F15FA580021B7F4 /* PPCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */; };
 		15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */; };
 		B3DCE3C3D44264C7B9F9922F /* Pods_PPCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170452CED4793EB6DC19D989 /* Pods_PPCalc.framework */; };
@@ -65,31 +56,22 @@
 		151576D61F0E7F9C001190F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151576D81F0E7F9C001190F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151576E01F0EC6BA001190F8 /* UserLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginController.swift; sourceTree = "<group>"; };
-		151576E21F0EC7CD001190F8 /* UserSignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignUpController.swift; sourceTree = "<group>"; };
 		151576E81F0EF7D2001190F8 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		151576F21F10C7E3001190F8 /* CalcMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcMainController.swift; sourceTree = "<group>"; };
 		151576F41F10C826001190F8 /* CalcScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcScreenController.swift; sourceTree = "<group>"; };
 		151576F61F10C857001190F8 /* CalcKeybordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcKeybordController.swift; sourceTree = "<group>"; };
 		151577021F10CB32001190F8 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		154723DB1F19133900207E63 /* p-16221.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "p-16221.jpg"; path = "../../../../Desktop/Картинки для PPCalc/p-16221.jpg"; sourceTree = "<group>"; };
-		154723DC1F19133900207E63 /* 333459-2880x1800.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "333459-2880x1800.jpg"; path = "../../../../Desktop/Картинки для PPCalc/333459-2880x1800.jpg"; sourceTree = "<group>"; };
-		154723DD1F19133900207E63 /* wpadne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wpadne.jpg; path = "../../../../Desktop/Картинки для PPCalc/wpadne.jpg"; sourceTree = "<group>"; };
-		154723DE1F19133900207E63 /* 1487754894_942418.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1487754894_942418.jpg; path = "../../../../Desktop/Картинки для PPCalc/1487754894_942418.jpg"; sourceTree = "<group>"; };
-		154723E41F1925A900207E63 /* Touch_ID-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Touch_ID-512.png"; path = "../../../../Desktop/Картинки для PPCalc/Touch_ID-512.png"; sourceTree = "<group>"; };
-		154723E61F1926C800207E63 /* Wallpapersxl_Illuminati_Matrix_B_W_266347_1920x1080.jpg.d27871d21f242491c7c4323d90027459.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Wallpapersxl_Illuminati_Matrix_B_W_266347_1920x1080.jpg.d27871d21f242491c7c4323d90027459.jpg; path = "../../../../Desktop/Картинки для PPCalc/Wallpapersxl_Illuminati_Matrix_B_W_266347_1920x1080.jpg.d27871d21f242491c7c4323d90027459.jpg"; sourceTree = "<group>"; };
 		154723E81F1927AC00207E63 /* Touch_ID-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Touch_ID-512 copy.png"; path = "../../../../Desktop/Картинки для PPCalc/Touch_ID-512 copy.png"; sourceTree = "<group>"; };
-		154723EA1F19305100207E63 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login.png; path = "../../../../Desktop/Картинки для PPCalc/login.png"; sourceTree = "<group>"; };
-		154723EC1F1955B300207E63 /* TouchIDWithLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TouchIDWithLabel.png; path = "../../../../Desktop/Картинки для PPCalc/TouchIDWithLabel.png"; sourceTree = "<group>"; };
-		154723EE1F19582500207E63 /* usingTouchID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = usingTouchID.png; path = "../../../../Desktop/Картинки для PPCalc/usingTouchID.png"; sourceTree = "<group>"; };
-		154B58431F1AA50D003571F5 /* calculatorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calculatorIcon.png; path = "../../../../Desktop/Картинки для PPCalc/calculatorIcon.png"; sourceTree = "<group>"; };
 		154B58461F1ABE9E003571F5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		156716731F1DFA7000014EA5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		156716741F1DFA7000014EA5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		156716771F1DFBE700014EA5 /* PPCalc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPCalc-Bridging-Header.h"; sourceTree = "<group>"; };
-		158499881F1BF3A600EF07A4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		1584998A1F1BF3C200EF07A4 /* BrainClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainClass.swift; sourceTree = "<group>"; };
+		159DEEBE1F1F28510053A330 /* backgroundForTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundForTableView.png; path = "../../../../Desktop/Картинки для PPCalc/backgroundForTableView.png"; sourceTree = "<group>"; };
 		15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/InputAdapter.swift"; sourceTree = "<group>"; };
 		15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/OutputAdapter.swift"; sourceTree = "<group>"; };
+		15C4390A1F1F4EF100D39805 /* CalcNoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcNoteCell.swift; sourceTree = "<group>"; };
+		15C4390C1F1F6B5300D39805 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCalcTests.swift; sourceTree = "<group>"; };
 		15CA79BD1F15FA580021B7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,7 +117,6 @@
 				154B58451F1ABE9D003571F5 /* Frameworks */,
 				15C197071F135D4200C7BE44 /* DataBase */,
 				151576EA1F0EF807001190F8 /* Calculator */,
-				154723E31F19134200207E63 /* Additional materials for project */,
 				154B58421F1A7B1C003571F5 /* Login/Signup page */,
 				6157CC94436AB5E302731C5D /* Pods */,
 				151576CD1F0E7F9C001190F8 /* Main.storyboard */,
@@ -156,7 +137,8 @@
 			children = (
 				151576CB1F0E7F9C001190F8 /* ViewController.swift */,
 				15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */,
-				158499881F1BF3A600EF07A4 /* HistoryViewController.swift */,
+				15C4390C1F1F6B5300D39805 /* File.swift */,
+				15C4390A1F1F4EF100D39805 /* CalcNoteCell.swift */,
 			);
 			path = PPCalc;
 			sourceTree = "<group>";
@@ -195,7 +177,9 @@
 		151577041F10D4EF001190F8 /* Additional files */ = {
 			isa = PBXGroup;
 			children = (
+				159DEEBE1F1F28510053A330 /* backgroundForTableView.png */,
 				151576D31F0E7F9C001190F8 /* Assets.xcassets */,
+				154723E81F1927AC00207E63 /* Touch_ID-512 copy.png */,
 				151576D51F0E7F9C001190F8 /* LaunchScreen.storyboard */,
 				151576C91F0E7F9C001190F8 /* AppDelegate.swift */,
 				151576D81F0E7F9C001190F8 /* Info.plist */,
@@ -204,31 +188,11 @@
 			path = PPCalc;
 			sourceTree = "<group>";
 		};
-		154723E31F19134200207E63 /* Additional materials for project */ = {
-			isa = PBXGroup;
-			children = (
-				154B58431F1AA50D003571F5 /* calculatorIcon.png */,
-				154723EE1F19582500207E63 /* usingTouchID.png */,
-				154723EC1F1955B300207E63 /* TouchIDWithLabel.png */,
-				154723EA1F19305100207E63 /* login.png */,
-				154723E81F1927AC00207E63 /* Touch_ID-512 copy.png */,
-				154723E61F1926C800207E63 /* Wallpapersxl_Illuminati_Matrix_B_W_266347_1920x1080.jpg.d27871d21f242491c7c4323d90027459.jpg */,
-				154723E41F1925A900207E63 /* Touch_ID-512.png */,
-				154723DB1F19133900207E63 /* p-16221.jpg */,
-				154723DC1F19133900207E63 /* 333459-2880x1800.jpg */,
-				154723DD1F19133900207E63 /* wpadne.jpg */,
-				154723DE1F19133900207E63 /* 1487754894_942418.jpg */,
-			);
-			name = "Additional materials for project";
-			path = PPCalc;
-			sourceTree = "<group>";
-		};
 		154B58421F1A7B1C003571F5 /* Login/Signup page */ = {
 			isa = PBXGroup;
 			children = (
 				156716771F1DFBE700014EA5 /* PPCalc-Bridging-Header.h */,
 				151576E01F0EC6BA001190F8 /* UserLoginController.swift */,
-				151576E21F0EC7CD001190F8 /* UserSignUpController.swift */,
 			);
 			name = "Login/Signup page";
 			path = PPCalc;
@@ -367,20 +331,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				154723E71F1926C800207E63 /* Wallpapersxl_Illuminati_Matrix_B_W_266347_1920x1080.jpg.d27871d21f242491c7c4323d90027459.jpg in Resources */,
-				154723E21F19133900207E63 /* 1487754894_942418.jpg in Resources */,
 				151576D71F0E7F9C001190F8 /* LaunchScreen.storyboard in Resources */,
 				151576D41F0E7F9C001190F8 /* Assets.xcassets in Resources */,
-				154B58441F1AA50D003571F5 /* calculatorIcon.png in Resources */,
-				154723E11F19133900207E63 /* wpadne.jpg in Resources */,
 				151576CF1F0E7F9C001190F8 /* Main.storyboard in Resources */,
-				154723EF1F19582500207E63 /* usingTouchID.png in Resources */,
-				154723EB1F19305100207E63 /* login.png in Resources */,
-				154723E01F19133900207E63 /* 333459-2880x1800.jpg in Resources */,
-				154723DF1F19133900207E63 /* p-16221.jpg in Resources */,
-				154723E51F1925A900207E63 /* Touch_ID-512.png in Resources */,
+				159DEEBF1F1F28510053A330 /* backgroundForTableView.png in Resources */,
 				154723E91F1927AC00207E63 /* Touch_ID-512 copy.png in Resources */,
-				154723ED1F1955B300207E63 /* TouchIDWithLabel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,15 +447,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */,
-				151576E31F0EC7CD001190F8 /* UserSignUpController.swift in Sources */,
 				151576E11F0EC6BA001190F8 /* UserLoginController.swift in Sources */,
 				151576CC1F0E7F9C001190F8 /* ViewController.swift in Sources */,
 				151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */,
-				158499891F1BF3A600EF07A4 /* HistoryViewController.swift in Sources */,
 				15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */,
 				151576CA1F0E7F9C001190F8 /* AppDelegate.swift in Sources */,
 				151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */,
+				15C4390B1F1F4EF100D39805 /* CalcNoteCell.swift in Sources */,
 				151576D21F0E7F9C001190F8 /* PPCalc.xcdatamodeld in Sources */,
+				15C4390D1F1F6B5300D39805 /* File.swift in Sources */,
 				15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */,
 				151577031F10CB32001190F8 /* Protocols.swift in Sources */,
 				1584998B1F1BF3C200EF07A4 /* BrainClass.swift in Sources */,

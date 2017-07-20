@@ -18,7 +18,15 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
     loginButton.readPermissions = ["email"]
         return loginButton
     }()
+    
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        navigateToAuthenticatedViewController()
+        if !result.isCancelled {
+            
+            if (FBSDKAccessToken.current() != nil) {
+                fetchProfile()
+            }
+        }
         
     }
     func loginButtonDidLogOut (loginButton: FBSDKLoginButton, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
@@ -28,8 +36,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
     func fetchProfile() {
         
         print("fetch profile")
-        let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"first_name, email, picture.type(large)"])
-        
+        guard let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"email"]) else { return print("error") }
         graphRequest.start(completionHandler: { (connection, parameters, error) -> Void in
             if ((error) != nil)
             {
@@ -40,14 +47,12 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
             {
                 guard let email:[String:AnyObject] = parameters as? [String : Any] as [String : AnyObject]? else { return print("error with getting email") }
                 print(email["email"]!)
-                
+
             }
         })
         
     }
-    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        
-    }
+    
     public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         
     }
@@ -55,7 +60,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
         return true
     }
     
-    @IBAction func touchIdButtonClicked(_ sender: UIButton) {
+    @IBAction func touchIdLogin(_ sender: UIButton) {
     
         
         // 1. Create a authentication context
@@ -87,9 +92,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
                     
                     // Check if there is an error
                     if let error = error {
-                        
                         debugPrint(error)
-                        
                     }
                     
                 }
@@ -113,7 +116,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
      - parameter error: the error message
      
      */
-    func showAlertViewAfterEvaluatingPolicyWithMessage( message:String ){
+    func showAlertViewAfterEvaluatingPolicyWithMessage( message:String ) {
         
         showAlertWithTitle(title: "Error", message: message)
         
@@ -149,7 +152,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
 //     - parameter errorCode: the error code
 //     - returns: the error message
 //     */
-    func errorMessageForLAErrorCode( errorCode:Int ) -> String{
+    func errorMessageForLAErrorCode( errorCode:Int ) -> String {
         
         var message = ""
         
@@ -195,29 +198,13 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
     /**
      This method will push the authenticated view controller onto the UINavigationController stack
      */
-    func navigateToAuthenticatedViewController(){
-
+    func navigateToAuthenticatedViewController() {
         performSegue(withIdentifier: "logged", sender: self)
-        
-//        if let loggedInVC = storyboard?.instantiateViewController(withIdentifier: "logged") {
-//            
-//            DispatchQueue.main.async() { () -> Void in
-//                
-//                self.navigationController?.pushViewController(loggedInVC, animated: true)
-//                
-//            }
-//            
-//        }
-        
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.prepareForInterfaceBuilder()
-        //self.performSegue(withIdentifier: "loginView", sender: self)
-        
-        //self.performSegue(withIdentifier: "signUpView", sender: self)
-
     }
     
     
@@ -225,14 +212,13 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(facebookLoginButton)
-        facebookLoginButton.center = view.center
-        //Якщо будуть трабли перевірити це
-        facebookLoginButton.delegate = self
+        facebookLoginButton.center = CGPoint(x: (view.frame.size.width - facebookLoginButton.center.x)/2, y: view.frame.size.height - facebookLoginButton.frame.size.height)
+            facebookLoginButton.delegate = self
         
-        if (FBSDKAccessToken.current()) != nil {
-            fetchProfile()
-        }
-        
+//        if (FBSDKAccessToken.current()) != nil {
+//            fetchProfile()
+//        }
+       
     }
    
     override func didReceiveMemoryWarning() {

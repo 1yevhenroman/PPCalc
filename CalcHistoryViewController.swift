@@ -63,12 +63,25 @@ class CalcHistoryViewController: UITableViewController {
         return noteItems.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        let item = noteItems[indexPath.row]
-        cell.textLabel?.text = item.value(forKey: "note") as? String
-        cell.detailTextLabel?.text = item.value(forKey: "numberForNote") as? String
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CalcNoteCell", for: indexPath) as? CalcNoteCell {
+            let item = noteItems[indexPath.row]
+//            if  (((cell.noteLabel.text != nil)) && ((cell.noteTextView.text != nil))) {
+                cell.noteLabel.text =  item.value(forKey: "numberForNote") as? String
+                cell.noteTextView.text! = item.value(forKey: "note") as! String
+                cell.backgroundOfCell.layer.cornerRadius = CGFloat(30.0)
+                //cell.backgroundColor = .clear
+                
+                //tableView.backgroundView = UIImage
+            //}
+            
+            
+        
+            return cell
+        }
+        
+        return UITableViewCell()
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +89,13 @@ class CalcHistoryViewController: UITableViewController {
                                                object: nil,
                                                queue: nil,
                                                using: resultReceived)
+        
+//        let imageView = UIImageView(frame: self.view.frame)
+//        guard let image = UIImage(named: "highresBackground") else {return print("error")}
+//        imageView.image = image
+//        self.view.addSubview(imageView)
+//        self.view.sendSubview(toBack: imageView)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

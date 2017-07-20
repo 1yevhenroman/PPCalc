@@ -12,6 +12,7 @@ let notificationForSavingResult = "needToSaveResult"
 class CalcScreenController: UIViewController {
 
     @IBOutlet var screenLabel: UILabel!
+    
     let outputAdapter = OutputAdapter.shared
     
     func presentResult(_ result: String) {
