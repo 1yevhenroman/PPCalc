@@ -15,6 +15,9 @@ class CalcNoteCell: UITableViewCell {
     @IBOutlet var noteLabel: UILabel!
     @IBOutlet var noteTextView: UITextView!
     @IBOutlet var backgroundOfCell: UIView!
+    @IBOutlet var scrollViewForResult: UIScrollView!
+    @IBOutlet var backgroundForResult: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,7 +30,9 @@ class CalcNoteCell: UITableViewCell {
     }
     override func didAddSubview(_ subview: UIView) {
         if backgroundOfCell != nil {
-             backgroundOfCell.layer.cornerRadius = CGFloat(30.0)
+             backgroundOfCell.layer.cornerRadius = CGFloat(10.0)
+            backgroundForResult.layer.cornerRadius = CGFloat(10.0)
+            scrollViewForResult.scrollRectToVisible(noteLabel.frame, animated: true)
         }
     }
 }
