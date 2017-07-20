@@ -13,6 +13,7 @@ class CalcHistoryViewController: UITableViewController {
     var numberForSaving = "0"
     var noteItems = [NSManagedObject]()
     
+    
     func resultReceived(notification: Notification) {
        
         guard let result = notification.userInfo?["result"] else { return }
@@ -65,15 +66,12 @@ class CalcHistoryViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CalcNoteCell", for: indexPath) as? CalcNoteCell {
             let item = noteItems[indexPath.row]
-//            if  (((cell.noteLabel.text != nil)) && ((cell.noteTextView.text != nil))) {
-                cell.noteLabel.text =  item.value(forKey: "numberForNote") as? String
-                cell.noteTextView.text! = item.value(forKey: "note") as! String
-                cell.backgroundOfCell.layer.cornerRadius = CGFloat(30.0)
-                //cell.backgroundColor = .clear
-                
-                //tableView.backgroundView = UIImage
-            //}
-            
+
+            cell.noteLabel.text =  item.value(forKey: "numberForNote") as? String
+            cell.noteTextView.text! = item.value(forKey: "note") as! String
+            cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
+            cell.contentView.backgroundColor = UIColor(white: 1, alpha: 0.5)
+            //cell.backgroundColor = .clear
             
         
             return cell
@@ -81,8 +79,32 @@ class CalcHistoryViewController: UITableViewController {
         
         return UITableViewCell()
     }
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Add a background view to the table view
+        let backgroundImage = UIImage(named: "MainBackgroundForPpcalc.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = imageView.bounds
+        imageView.addSubview(blurView)
+        imageView.contentMode = .scaleAspectFill
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NoteEntity")
+        
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            noteItems = results
+        }
+        catch {
+            print("Error in fetch request")
+        }
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: notificationForSavingResult),
@@ -97,19 +119,7 @@ class CalcHistoryViewController: UITableViewController {
 //        self.view.sendSubview(toBack: imageView)
         
     }
-    override func viewWillAppear(_ animated: Bool) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NoteEntity")
-        
-        do {
-            let results = try managedContext.fetch(fetchRequest)
-            noteItems = results
-        }
-        catch {
-            print("Error in fetch request")
-        }
-    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext

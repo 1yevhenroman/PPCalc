@@ -31,7 +31,7 @@ class CalcNoteCell: UITableViewCell {
     override func didAddSubview(_ subview: UIView) {
         if backgroundOfCell != nil {
              backgroundOfCell.layer.cornerRadius = CGFloat(10.0)
-            backgroundForResult.layer.cornerRadius = CGFloat(10.0)
+            backgroundForResult.layer.cornerRadius = CGFloat(15.0)
             scrollViewForResult.scrollRectToVisible(noteLabel.frame, animated: true)
         }
     }
