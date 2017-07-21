@@ -9,17 +9,26 @@
 import UIKit
 let notificationForSendResult = "'ScreenController'PleaseSendResultTo'CalcHistory'"
 class CalcKeybordController: UIViewController {
-
+    
+    @IBOutlet var allKeyboardButtons: [UIButton]!
     var onNumTap: ((_ num: Int)->())?
     var onUtilityTap: ((_ symbol: Int)->())?
 
+    
+    
     @IBAction func changeSize(pinch: UIPinchGestureRecognizer) {
         
+        for button in allKeyboardButtons {
+               button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40*pinch.scale)
+                debugPrint(pinch.scale)
+            debugPrint(button.titleLabel?.font.pointSize ?? "default value")
+                //pinch.scale = 1
+
+        }
     }
     
     @IBAction func saveResult(_ sender: UIBarButtonItem) {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationForSendResult), object: nil)
-        print("button touched and notification posted")
     }
     @IBAction func onNumericTap(_ button: UIButton) {
         onNumTap?(button.tag)
@@ -31,8 +40,6 @@ class CalcKeybordController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
     }
 
     override func didReceiveMemoryWarning() {

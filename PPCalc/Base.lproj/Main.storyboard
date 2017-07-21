@@ -322,34 +322,20 @@
                                                     <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="v57-Ty-ygz"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-tE-ifQ">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-tE-ifQ">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="110.5"/>
                                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="2">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="40"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
+                                                <state key="normal" title="2"/>
                                                 <connections>
                                                     <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="bT7-e7-jUi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAD-il-Zlg">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAD-il-Zlg">
                                                 <rect key="frame" x="187.5" y="0.0" width="94" height="110.5"/>
                                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="3">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="40"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
+                                                <state key="normal" title="3"/>
                                                 <connections>
                                                     <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="77L-Ni-mtt"/>
                                                 </connections>
@@ -528,6 +514,27 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="551"/>
+                    <connections>
+                        <outletCollection property="allKeyboardButtons" destination="4j9-8P-vxa" collectionClass="NSMutableArray" id="gHU-gd-GH0"/>
+                        <outletCollection property="allKeyboardButtons" destination="yfP-3r-hZ4" collectionClass="NSMutableArray" id="qrj-Ni-OjN"/>
+                        <outletCollection property="allKeyboardButtons" destination="lMo-2d-crG" collectionClass="NSMutableArray" id="lm6-qp-Yva"/>
+                        <outletCollection property="allKeyboardButtons" destination="rK8-ib-2dS" collectionClass="NSMutableArray" id="Thf-L1-cez"/>
+                        <outletCollection property="allKeyboardButtons" destination="4Xg-9H-6Pl" collectionClass="NSMutableArray" id="Tyh-p3-ReR"/>
+                        <outletCollection property="allKeyboardButtons" destination="MUm-tE-ifQ" collectionClass="NSMutableArray" id="FyZ-es-ZEu"/>
+                        <outletCollection property="allKeyboardButtons" destination="xAD-il-Zlg" collectionClass="NSMutableArray" id="P8M-Wh-Zy6"/>
+                        <outletCollection property="allKeyboardButtons" destination="1P4-Rn-jvP" collectionClass="NSMutableArray" id="YMe-wc-wxw"/>
+                        <outletCollection property="allKeyboardButtons" destination="hXB-8r-qce" collectionClass="NSMutableArray" id="t47-8t-HrO"/>
+                        <outletCollection property="allKeyboardButtons" destination="nue-J7-iTd" collectionClass="NSMutableArray" id="cSz-Fg-pcn"/>
+                        <outletCollection property="allKeyboardButtons" destination="wbn-1j-m83" collectionClass="NSMutableArray" id="Vnf-eo-rfI"/>
+                        <outletCollection property="allKeyboardButtons" destination="J93-8u-LQG" collectionClass="NSMutableArray" id="iCh-Yt-DEJ"/>
+                        <outletCollection property="allKeyboardButtons" destination="Pe2-d4-7Fz" collectionClass="NSMutableArray" id="iNZ-2r-BjS"/>
+                        <outletCollection property="allKeyboardButtons" destination="SFb-VR-gQe" collectionClass="NSMutableArray" id="7AC-M4-CyK"/>
+                        <outletCollection property="allKeyboardButtons" destination="1SR-Kd-ZbG" collectionClass="NSMutableArray" id="Gdq-XY-fa4"/>
+                        <outletCollection property="allKeyboardButtons" destination="Ahw-Ku-dDC" collectionClass="NSMutableArray" id="AH1-UM-k9Y"/>
+                        <outletCollection property="allKeyboardButtons" destination="TgW-bQ-8YG" collectionClass="NSMutableArray" id="JZF-ER-vOP"/>
+                        <outletCollection property="allKeyboardButtons" destination="8dw-Ch-Q9j" collectionClass="NSMutableArray" id="ZLm-7P-FMR"/>
+                        <outletCollection property="allKeyboardButtons" destination="lj8-ND-z22" collectionClass="NSMutableArray" id="6x0-us-ZpJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjD-zU-aNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="rbo-bl-K2r">
