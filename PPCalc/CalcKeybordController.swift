@@ -13,6 +13,10 @@ class CalcKeybordController: UIViewController {
     var onNumTap: ((_ num: Int)->())?
     var onUtilityTap: ((_ symbol: Int)->())?
 
+    @IBAction func changeSize(pinch: UIPinchGestureRecognizer) {
+        
+    }
+    
     @IBAction func saveResult(_ sender: UIBarButtonItem) {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationForSendResult), object: nil)
         print("button touched and notification posted")
