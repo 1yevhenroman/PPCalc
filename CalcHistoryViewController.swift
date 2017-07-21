@@ -120,14 +120,32 @@ class CalcHistoryViewController: UITableViewController {
         
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //       let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    //       let managedContext = appDelegate.persistentContainer.viewContext
+    //       tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.right)
+    //       managedContext.delete((noteItems[indexPath.row]))
+    //       noteItems.remove(at: indexPath.row)
+    //        self.tableView.reloadData()
+    //
+    //   }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
-        tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.right)
-        managedContext.delete((noteItems[indexPath.row]))
-        noteItems.remove(at: indexPath.row)
-        self.tableView.reloadData()
+        tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         
+        
+        if editingStyle == UITableViewCellEditingStyle.delete {
+
+            managedContext.delete((noteItems[indexPath.row]))
+            //tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            noteItems.remove(at: indexPath.row)
+            self.tableView.reloadData()
+            
+        }
+        //self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -209,6 +227,5 @@ class CalcHistoryViewController: UITableViewController {
 //        // Dispose of any resources that can be recreated.
 //    }
 //
-    
 }
 
