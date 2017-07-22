@@ -26,7 +26,7 @@ class CalcScreenController: UIViewController {
                                                name: NSNotification.Name(rawValue: notificationForSendResult),
                                                object: nil)
     }
-    func checkForSecretMode() {
+    func checkForSecretMode() { 
         if screenLabel.text == "1415926535" { //замінити число на ВАР
            self.performSegue(withIdentifier: "loginView", sender: self)
         }

@@ -471,7 +471,6 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <state key="normal" title="."/>
                                                         <connections>
-                                                            <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="ILG-q9-NCx"/>
                                                             <action selector="onUtilityTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="FeC-m4-Mup"/>
                                                         </connections>
                                                     </button>
