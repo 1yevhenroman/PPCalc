@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PPCalc/CalcKeybordController.swift"
-            timestampString = "522322732.581497"
+            timestampString = "522426976.860765"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "changeSize(pinch:)"
             landmarkType = "7">
          </BreakpointContent>

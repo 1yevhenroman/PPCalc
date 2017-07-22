@@ -13,17 +13,14 @@ class CalcKeybordController: UIViewController {
     @IBOutlet var allKeyboardButtons: [UIButton]!
     var onNumTap: ((_ num: Int)->())?
     var onUtilityTap: ((_ symbol: Int)->())?
-
+    
     
     
     @IBAction func changeSize(pinch: UIPinchGestureRecognizer) {
-        
         for button in allKeyboardButtons {
-               button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40*pinch.scale)
-                debugPrint(pinch.scale)
-            debugPrint(button.titleLabel?.font.pointSize ?? "default value")
-                //pinch.scale = 1
-
+            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40*pinch.scale)
+            pinch.scale = 1
+            
         }
     }
     
@@ -41,7 +38,7 @@ class CalcKeybordController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b1D-eh-4NF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b1D-eh-4NF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="-2268" y="-533"/>
         </scene>
-        <!--Calculator-->
+        <!--Calc Keybord Controller-->
         <scene sceneID="QD4-0e-rUD">
             <objects>
                 <viewController id="DhD-KS-Ucm" customClass="CalcKeybordController" customModule="PPCalc" sceneMemberID="viewController">
@@ -136,13 +136,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gB7-o7-U9e">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAb-lo-jts">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="IyP-L6-At3"/>
-                                                    <constraint firstAttribute="height" constant="44" id="OVZ-Q6-InY"/>
+                                                    <constraint firstAttribute="height" constant="60" id="OVZ-Q6-InY"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="Q1q-Pp-U5F" kind="embed" id="z20-1H-YOU"/>
@@ -157,10 +157,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XUA-Ee-3vm">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="575"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="559"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5R-RU-CAy">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="575"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                                 <connections>
                                                     <segue destination="1wT-d3-vaq" kind="embed" id="Zf8-NH-ZcP"/>
                                                 </connections>
@@ -184,7 +184,7 @@
                             <constraint firstAttribute="trailing" secondItem="PoQ-Zl-We1" secondAttribute="trailing" id="VcF-RI-f7B"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calculator" image="calculatorIcon.png" selectedImage="calculatorIcon.png" id="2B6-OY-fOj">
+                    <tabBarItem key="tabBarItem" id="2B6-OY-fOj">
                         <inset key="imageInsets" minX="0.0" minY="1000" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -206,14 +206,14 @@
                         <viewControllerLayoutGuide type="bottom" id="GIq-5q-leg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2sQ-mY-Tl0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tGR-sM-QCB">
-                                <rect key="frame" x="0.0" y="127" width="375" height="540"/>
+                                <rect key="frame" x="0.0" y="127" width="375" height="432"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2m0-i2-CbT">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="540"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
                                         <connections>
                                             <segue destination="ou6-cz-BoR" kind="embed" identifier="KeyboardControllerSegue" id="1cz-cj-frP"/>
                                         </connections>
@@ -635,7 +635,7 @@
             </objects>
             <point key="canvasLocation" x="617" y="893"/>
         </scene>
-        <!--Item 2-->
+        <!--Settings-->
         <scene sceneID="vAs-2O-J8y">
             <objects>
                 <viewController id="Vrt-J0-QuQ" sceneMemberID="viewController">
@@ -648,7 +648,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="TTh-CK-8Rt"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="TTh-CK-8Rt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="La0-bO-qM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -737,7 +737,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQe-Mm-fB6">
-                                            <rect key="frame" x="169" y="43" width="37" height="21"/>
+                                            <rect key="frame" x="169" y="43" width="37" height="36.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -745,11 +745,13 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="mQe-Mm-fB6" firstAttribute="top" secondItem="9Zs-z0-1xC" secondAttribute="topMargin" constant="35" id="Cbe-Tj-aDt"/>
+                                        <constraint firstItem="MnE-X2-UeQ" firstAttribute="top" secondItem="mQe-Mm-fB6" secondAttribute="bottom" constant="-73.5" id="KVw-zO-DQJ"/>
                                         <constraint firstItem="MnE-X2-UeQ" firstAttribute="top" secondItem="9Zs-z0-1xC" secondAttribute="topMargin" constant="-2" id="QA2-IH-YTC"/>
                                         <constraint firstItem="MnE-X2-UeQ" firstAttribute="centerX" secondItem="9Zs-z0-1xC" secondAttribute="centerX" id="a8h-gP-dJO"/>
                                         <constraint firstItem="MnE-X2-UeQ" firstAttribute="centerY" secondItem="9Zs-z0-1xC" secondAttribute="centerY" id="ewg-mx-Pmk"/>
                                         <constraint firstItem="MnE-X2-UeQ" firstAttribute="leading" secondItem="9Zs-z0-1xC" secondAttribute="leadingMargin" constant="6" id="fo5-Ry-2oW"/>
-                                        <constraint firstAttribute="trailing" secondItem="mQe-Mm-fB6" secondAttribute="trailing" constant="169" id="mNR-cI-7aK"/>
+                                        <constraint firstItem="mQe-Mm-fB6" firstAttribute="centerY" secondItem="9Zs-z0-1xC" secondAttribute="centerY" id="mQi-jP-3dr"/>
+                                        <constraint firstItem="mQe-Mm-fB6" firstAttribute="leading" secondItem="MnE-X2-UeQ" secondAttribute="trailing" constant="-191" id="qYS-7W-EG8"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath=" backgroundOfCell.layer.cornerRadius">
@@ -796,8 +798,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="lON-d5-tfw" kind="relationship" relationship="viewControllers" id="4k4-9U-VcG"/>
                         <segue destination="DhD-KS-Ucm" kind="relationship" relationship="viewControllers" id="0gt-Ed-1iB"/>
+                        <segue destination="lON-d5-tfw" kind="relationship" relationship="viewControllers" id="4k4-9U-VcG"/>
                         <segue destination="Vrt-J0-QuQ" kind="relationship" relationship="viewControllers" id="waC-hw-l6G"/>
                     </connections>
                 </tabBarController>
@@ -809,12 +811,16 @@
         <scene sceneID="EV6-Tg-cwf">
             <objects>
                 <viewController id="Q1q-Pp-U5F" customClass="CalcKeybordController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQj-fN-ClG"/>
+                        <viewControllerLayoutGuide type="bottom" id="v2o-Tu-WAl"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="76D-vo-rhA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFY-51-GkO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <items>
                                     <navigationItem title="Private mode" id="XHg-Ia-RVg">
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="T73-B6-t18">
@@ -843,10 +849,9 @@
     <resources>
         <image name="MainBackgroundForPpcalc" width="4500" height="3924"/>
         <image name="Touch_ID-512 copy.png" width="512" height="512"/>
-        <image name="calculatorIcon.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qU9-P9-tbY"/>
+        <segue reference="Zf8-NH-ZcP"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
