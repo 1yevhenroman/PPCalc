@@ -20,22 +20,21 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
     }()
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        
         navigateToAuthenticatedViewController()
         if !result.isCancelled {
             
             if (FBSDKAccessToken.current() != nil) {
                 fetchProfile()
             }
+            FBSDKLoginManager().logOut()
         }
-        
     }
     func loginButtonDidLogOut (loginButton: FBSDKLoginButton, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        print("complete login")
         fetchProfile()
     }
     func fetchProfile() {
         
-        print("fetch profile")
         guard let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"email"]) else { return print("error") }
         graphRequest.start(completionHandler: { (connection, parameters, error) -> Void in
             if ((error) != nil)
@@ -56,7 +55,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
     public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         
     }
-    func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!)->Bool {
+    func loginButtonWillLogin(_ lo4ginButton: FBSDKLoginButton!)->Bool {
         return true
     }
     
@@ -200,6 +199,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
      */
     func navigateToAuthenticatedViewController() {
         performSegue(withIdentifier: "logged", sender: self)
+        
     }
     
     
@@ -213,12 +213,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
         super.viewDidLoad()
         view.addSubview(facebookLoginButton)
         facebookLoginButton.center = CGPoint(x: (view.frame.size.width - facebookLoginButton.center.x)/2, y: view.frame.size.height - facebookLoginButton.frame.size.height)
-            facebookLoginButton.delegate = self
-        
-//        if (FBSDKAccessToken.current()) != nil {
-//            fetchProfile()
-//        }
-       
+        facebookLoginButton.delegate = self
     }
    
     override func didReceiveMemoryWarning() {

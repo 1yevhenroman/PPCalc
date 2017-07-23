@@ -24,8 +24,6 @@ class CalcHistoryViewController: UITableViewController {
         
     }
     func savingNumber(result: String) {
-
-       print("Number: \(result)")
         let alertController = UIAlertController(title: "Save result", message: "Please, add note to result", preferredStyle: UIAlertControllerStyle.alert)
         let confirmAction = UIAlertAction(title: "Confirm", style: .default, handler: ({(_) in
             if let field = alertController.textFields?[0] {
@@ -71,9 +69,6 @@ class CalcHistoryViewController: UITableViewController {
             cell.noteTextView.text! = item.value(forKey: "note") as! String
             cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
             cell.contentView.backgroundColor = UIColor(white: 1, alpha: 0.5)
-            //cell.backgroundColor = .clear
-            
-        
             return cell
         }
         
@@ -86,12 +81,12 @@ class CalcHistoryViewController: UITableViewController {
         let backgroundImage = UIImage(named: "MainBackgroundForPpcalc.png")
         let imageView = UIImageView(image: backgroundImage)
         self.tableView.backgroundView = imageView
-        
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         let blurView = UIVisualEffectView(effect: blurEffect)
         blurView.frame = imageView.bounds
         imageView.addSubview(blurView)
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NoteEntity")
@@ -112,23 +107,7 @@ class CalcHistoryViewController: UITableViewController {
                                                queue: nil,
                                                using: resultReceived)
         
-//        let imageView = UIImageView(frame: self.view.frame)
-//        guard let image = UIImage(named: "highresBackground") else {return print("error")}
-//        imageView.image = image
-//        self.view.addSubview(imageView)
-//        self.view.sendSubview(toBack: imageView)
-        
     }
-    
-    //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //       let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    //       let managedContext = appDelegate.persistentContainer.viewContext
-    //       tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.right)
-    //       managedContext.delete((noteItems[indexPath.row]))
-    //       noteItems.remove(at: indexPath.row)
-    //        self.tableView.reloadData()
-    //
-    //   }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
@@ -140,92 +119,19 @@ class CalcHistoryViewController: UITableViewController {
         if editingStyle == UITableViewCellEditingStyle.delete {
 
             managedContext.delete((noteItems[indexPath.row]))
-            //tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
             noteItems.remove(at: indexPath.row)
             self.tableView.reloadData()
             
         }
-        //self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
-        //NotificationCenter.default.removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
 
-    // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-//    
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
 }
-

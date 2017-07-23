@@ -19,8 +19,6 @@ class CalcKeybordController: UIViewController {
     @IBAction func changeSize(pinch: UIPinchGestureRecognizer) {
         for button in allKeyboardButtons {
             button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40*pinch.scale)
-            pinch.scale = 1
-            
         }
     }
     

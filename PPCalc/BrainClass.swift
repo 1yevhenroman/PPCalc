@@ -7,11 +7,11 @@
 //
 
 import Foundation
-
+import NotificationCenter
+import UserNotifications
 class Perfected: Model {
     
     static let shared = Perfected()
-    
     var operations: Dictionary< Operation, TypeOperation> = [
         
         .pi : TypeOperation.constant(Double.pi),
@@ -31,6 +31,7 @@ class Perfected: Model {
     var input: String = " "
     var output = OutputAdapter.shared
     private var accumulator: Double?
+    var pendingBinaryOperation: PendingBinaryOperation?
     
     enum TypeOperation {
         case constant(Double)
@@ -47,7 +48,7 @@ class Perfected: Model {
             return function(firstOperand, secondOperand)
         }
     }
-    var pendingBinaryOperation: PendingBinaryOperation?
+   
     
     func performOperation(_ symbol: Operation) {
         if let operation = operations[symbol] {
@@ -105,16 +106,6 @@ class Perfected: Model {
                 return " "
             }
         }
-    }
-    func performingForShowing(result: String)->String {
-        if var modifiedResult = String(result) {
-            if modifiedResult.hasSuffix(".0") {
-                let range = modifiedResult.index(modifiedResult.endIndex, offsetBy: -2)..<modifiedResult.endIndex
-                modifiedResult.removeSubrange(range)
-                return modifiedResult
-            }
-        }
-        return " "
     }
     func enterEquation(equation: String) {
         

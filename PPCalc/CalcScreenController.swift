@@ -8,11 +8,13 @@
 
 import UIKit
 let notificationForSavingResult = "needToSaveResult"
+let notificationForResetBrain = "resetBrain"
 
 class CalcScreenController: UIViewController {
 
     @IBOutlet var screenLabel: UILabel!
-    let outputAdapter = OutputAdapter.shared
+
+    private let outputAdapter = OutputAdapter.shared
     
     func presentResult(_ result: String) {
         screenLabel.text = result
@@ -25,6 +27,7 @@ class CalcScreenController: UIViewController {
                                                selector: #selector(sendResultForSaving),
                                                name: NSNotification.Name(rawValue: notificationForSendResult),
                                                object: nil)
+
     }
     func checkForSecretMode() { 
         if screenLabel.text == "1415926535" { //замінити число на ВАР
