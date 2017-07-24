@@ -10,60 +10,17 @@ import UIKit
 import CoreData
 
 class CalcHistoryViewController: UITableViewController {
-    var numberForSaving = "0"
-    var noteItems = [NSManagedObject]()
     
-    
-    func resultReceived(notification: Notification) {
-       
-        guard let result = notification.userInfo?["result"] else { return }
-        debugPrint(result)
-         debugPrint(result as! String)
-        savingNumber(result: result as! String)
-        numberForSaving = result as! String
-        
-    }
-    func savingNumber(result: String) {
-        let alertController = UIAlertController(title: "Save result", message: "Please, add note to result", preferredStyle: UIAlertControllerStyle.alert)
-        let confirmAction = UIAlertAction(title: "Confirm", style: .default, handler: ({(_) in
-            if let field = alertController.textFields?[0] {
-                self.saveItem(noteTosave: field.text!)
-                self.tableView.reloadData()
-            }}))
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
-        alertController.addTextField(configurationHandler: ({
-            (textField) in
-            textField.placeholder = "Your note..."}))
-        alertController.addAction(confirmAction)
-        alertController.addAction(cancelAction)
-        
-        self.present(alertController, animated: true, completion: nil)
-        
-    }
-    func saveItem(noteTosave: String) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "NoteEntity", in: managedContext)
-        let item = NSManagedObject(entity: entity!, insertInto: managedContext)
-        item.setValue(noteTosave, forKey: "note")
-        item.setValue(numberForSaving, forKey: "numberForNote")
-        do {
-            try managedContext.save()
-            noteItems.append(item)
-        }
-        catch {
-            print("Error in saving data")
-        }
-    }
+    let dataHistory = CalcHistoryCoreData.shared
+    var refresher: UIRefreshControl!
     
     ///overrides
     override func tableView(_ tableView: UITableView, numberOfRowsInSection numberOfRowSection: Int)->Int {
-        return noteItems.count
+        return dataHistory.noteItems.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CalcNoteCell", for: indexPath) as? CalcNoteCell {
-            let item = noteItems[indexPath.row]
+            let item = dataHistory.noteItems[indexPath.row]
 
             cell.noteLabel.text =  item.value(forKey: "numberForNote") as? String
             cell.noteTextView.text! = item.value(forKey: "note") as! String
@@ -93,38 +50,50 @@ class CalcHistoryViewController: UITableViewController {
         
         do {
             let results = try managedContext.fetch(fetchRequest)
-            noteItems = results
+            dataHistory.noteItems = results
         }
         catch {
             print("Error in fetch request")
         }
+        
+        
+
     }
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: notificationForSavingResult),
-                                               object: nil,
-                                               queue: nil,
-                                               using: resultReceived)
-        
+        refresher = UIRefreshControl()
+        tableView.addSubview(refresher)
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: #selector(reloadData), for: .valueChanged)
+   }
+    func reloadData () {
+        tableView.reloadData()
+        refresher.endRefreshing()
     }
-    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         
-        
         if editingStyle == UITableViewCellEditingStyle.delete {
 
-            managedContext.delete((noteItems[indexPath.row]))
-            noteItems.remove(at: indexPath.row)
+            managedContext.delete((dataHistory.noteItems[indexPath.row]))
+            dataHistory.noteItems.remove(at: indexPath.row)
             self.tableView.reloadData()
             
         }
     }
     
+    
+ 
+        
+    
+    
+    func refresh(sender:AnyObject) {
+        // Code to refresh table view  
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -132,6 +101,6 @@ class CalcHistoryViewController: UITableViewController {
         super.viewDidDisappear(true)
         NotificationCenter.default.removeObserver(self)
     }
-
+   
 
 }

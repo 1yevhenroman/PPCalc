@@ -206,14 +206,14 @@
                         <viewControllerLayoutGuide type="bottom" id="GIq-5q-leg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2sQ-mY-Tl0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tGR-sM-QCB">
-                                <rect key="frame" x="0.0" y="127" width="375" height="540"/>
+                                <rect key="frame" x="0.0" y="127" width="375" height="432"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2m0-i2-CbT">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="540"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
                                         <connections>
                                             <segue destination="ou6-cz-BoR" kind="embed" identifier="KeyboardControllerSegue" id="1cz-cj-frP"/>
                                         </connections>
@@ -656,19 +656,14 @@
         <!--History-->
         <scene sceneID="tnC-ny-f3D">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="lON-d5-tfw" customClass="CalcHistoryViewController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="lON-d5-tfw" customClass="CalcHistoryViewController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" id="6zZ-r4-saj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search your note" id="ISb-Qj-v0e">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CalcNoteCell" rowHeight="123" id="ziS-FN-dxH" customClass="CalcNoteCell" customModule="PPCalc" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="123"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="123"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ziS-FN-dxH" id="9Zs-z0-1xC">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
@@ -850,7 +845,7 @@
         <image name="Touch_ID-512 copy.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qU9-P9-tbY"/>
+        <segue reference="Zf8-NH-ZcP"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

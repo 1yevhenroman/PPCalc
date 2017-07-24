@@ -87,6 +87,7 @@ class Perfected: Model {
             output.presentResult(result: result)
         }
     }
+    // мб це не юзається
     func printOnScreen () {
         output.presentResult(result: result)
     }
@@ -110,5 +111,6 @@ class Perfected: Model {
     func enterEquation(equation: String) {
         
     }
+    
     
 }
