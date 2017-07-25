@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		071C8E32E5C07924131E8DF2 /* Pods_PPCalcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1922BB6C4155C86ABA77C /* Pods_PPCalcTests.framework */; };
 		151576CA1F0E7F9C001190F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576C91F0E7F9C001190F8 /* AppDelegate.swift */; };
-		151576CC1F0E7F9C001190F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576CB1F0E7F9C001190F8 /* ViewController.swift */; };
+		151576CC1F0E7F9C001190F8 /* MyTopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576CB1F0E7F9C001190F8 /* MyTopBarViewController.swift */; };
 		151576CF1F0E7F9C001190F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151576CD1F0E7F9C001190F8 /* Main.storyboard */; };
 		151576D21F0E7F9C001190F8 /* PPCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 151576D01F0E7F9C001190F8 /* PPCalc.xcdatamodeld */; };
-		151576D41F0E7F9C001190F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151576D31F0E7F9C001190F8 /* Assets.xcassets */; };
 		151576D71F0E7F9C001190F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151576D51F0E7F9C001190F8 /* LaunchScreen.storyboard */; };
 		151576E11F0EC6BA001190F8 /* UserLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576E01F0EC6BA001190F8 /* UserLoginController.swift */; };
 		151576E91F0EF7D2001190F8 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151576E81F0EF7D2001190F8 /* LocalAuthentication.framework */; };
@@ -20,17 +19,43 @@
 		151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576F41F10C826001190F8 /* CalcScreenController.swift */; };
 		151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576F61F10C857001190F8 /* CalcKeybordController.swift */; };
 		151577031F10CB32001190F8 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151577021F10CB32001190F8 /* Protocols.swift */; };
-		154723E91F1927AC00207E63 /* Touch_ID-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 154723E81F1927AC00207E63 /* Touch_ID-512 copy.png */; };
 		154B58471F1ABE9E003571F5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154B58461F1ABE9E003571F5 /* CoreData.framework */; };
 		156716751F1DFA7000014EA5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156716731F1DFA7000014EA5 /* FBSDKCoreKit.framework */; };
 		156716761F1DFA7000014EA5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156716741F1DFA7000014EA5 /* FBSDKLoginKit.framework */; };
 		1584998B1F1BF3C200EF07A4 /* BrainClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584998A1F1BF3C200EF07A4 /* BrainClass.swift */; };
-		159DEEBF1F1F28510053A330 /* backgroundForTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 159DEEBE1F1F28510053A330 /* backgroundForTableView.png */; };
 		15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */; };
 		15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */; };
 		15C4390B1F1F4EF100D39805 /* CalcNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C4390A1F1F4EF100D39805 /* CalcNoteCell.swift */; };
 		15C4390D1F1F6B5300D39805 /* CalcData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C4390C1F1F6B5300D39805 /* CalcData.swift */; };
 		15CA79BC1F15FA580021B7F4 /* PPCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */; };
+		15CB82151F2750FA002F7C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82141F2750FA002F7C5D /* Assets.xcassets */; };
+		15CB82871F275C9B002F7C5D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 15CB824E1F275C9B002F7C5D /* Contents.json */; };
+		15CB82881F275C9B002F7C5D /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB824F1F275C9B002F7C5D /* Icon-App-20x20@1x.png */; };
+		15CB82891F275C9B002F7C5D /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82501F275C9B002F7C5D /* Icon-App-20x20@2x.png */; };
+		15CB828A1F275C9B002F7C5D /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82511F275C9B002F7C5D /* Icon-App-20x20@3x.png */; };
+		15CB828B1F275C9B002F7C5D /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82521F275C9B002F7C5D /* Icon-App-29x29@1x.png */; };
+		15CB828C1F275C9B002F7C5D /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82531F275C9B002F7C5D /* Icon-App-29x29@2x.png */; };
+		15CB828D1F275C9B002F7C5D /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82541F275C9B002F7C5D /* Icon-App-29x29@3x.png */; };
+		15CB828E1F275C9B002F7C5D /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82551F275C9B002F7C5D /* Icon-App-40x40@1x.png */; };
+		15CB828F1F275C9B002F7C5D /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82561F275C9B002F7C5D /* Icon-App-40x40@2x.png */; };
+		15CB82901F275C9B002F7C5D /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82571F275C9B002F7C5D /* Icon-App-40x40@3x.png */; };
+		15CB82911F275C9B002F7C5D /* Icon-App-57x57@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82581F275C9B002F7C5D /* Icon-App-57x57@1x.png */; };
+		15CB82921F275C9B002F7C5D /* Icon-App-57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82591F275C9B002F7C5D /* Icon-App-57x57@2x.png */; };
+		15CB82931F275C9B002F7C5D /* Icon-App-60x60@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB825A1F275C9B002F7C5D /* Icon-App-60x60@1x.png */; };
+		15CB82941F275C9B002F7C5D /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB825B1F275C9B002F7C5D /* Icon-App-60x60@2x.png */; };
+		15CB82951F275C9B002F7C5D /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB825C1F275C9B002F7C5D /* Icon-App-60x60@3x.png */; };
+		15CB82961F275C9B002F7C5D /* Icon-App-72x72@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB825D1F275C9B002F7C5D /* Icon-App-72x72@1x.png */; };
+		15CB82971F275C9B002F7C5D /* Icon-App-72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB825E1F275C9B002F7C5D /* Icon-App-72x72@2x.png */; };
+		15CB82981F275C9B002F7C5D /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB825F1F275C9B002F7C5D /* Icon-App-76x76@1x.png */; };
+		15CB82991F275C9B002F7C5D /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82601F275C9B002F7C5D /* Icon-App-76x76@2x.png */; };
+		15CB829A1F275C9B002F7C5D /* Icon-App-76x76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82611F275C9B002F7C5D /* Icon-App-76x76@3x.png */; };
+		15CB829B1F275C9B002F7C5D /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82621F275C9B002F7C5D /* Icon-App-83.5x83.5@2x.png */; };
+		15CB829C1F275C9B002F7C5D /* Icon-Small-50x50@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82631F275C9B002F7C5D /* Icon-Small-50x50@1x.png */; };
+		15CB829D1F275C9B002F7C5D /* Icon-Small-50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82641F275C9B002F7C5D /* Icon-Small-50x50@2x.png */; };
+		15CB829E1F275C9B002F7C5D /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82651F275C9B002F7C5D /* iTunesArtwork@1x.png */; };
+		15CB829F1F275C9B002F7C5D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82661F275C9B002F7C5D /* iTunesArtwork@2x.png */; };
+		15CB82A01F275C9B002F7C5D /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82671F275C9B002F7C5D /* iTunesArtwork@3x.png */; };
+		15CB82A11F275C9B002F7C5D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 15CB82681F275C9B002F7C5D /* README.md */; };
 		15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */; };
 		B3DCE3C3D44264C7B9F9922F /* Pods_PPCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170452CED4793EB6DC19D989 /* Pods_PPCalc.framework */; };
 /* End PBXBuildFile section */
@@ -49,10 +74,9 @@
 		09E1922BB6C4155C86ABA77C /* Pods_PPCalcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPCalcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151576C61F0E7F9C001190F8 /* PPCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151576C91F0E7F9C001190F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		151576CB1F0E7F9C001190F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		151576CB1F0E7F9C001190F8 /* MyTopBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTopBarViewController.swift; sourceTree = "<group>"; };
 		151576CE1F0E7F9C001190F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		151576D11F0E7F9C001190F8 /* PPCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PPCalc.xcdatamodel; sourceTree = "<group>"; };
-		151576D31F0E7F9C001190F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151576D61F0E7F9C001190F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151576D81F0E7F9C001190F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151576E01F0EC6BA001190F8 /* UserLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginController.swift; sourceTree = "<group>"; };
@@ -61,13 +85,11 @@
 		151576F41F10C826001190F8 /* CalcScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcScreenController.swift; sourceTree = "<group>"; };
 		151576F61F10C857001190F8 /* CalcKeybordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcKeybordController.swift; sourceTree = "<group>"; };
 		151577021F10CB32001190F8 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		154723E81F1927AC00207E63 /* Touch_ID-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Touch_ID-512 copy.png"; path = "../../../../Desktop/Картинки для PPCalc/Touch_ID-512 copy.png"; sourceTree = "<group>"; };
 		154B58461F1ABE9E003571F5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		156716731F1DFA7000014EA5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		156716741F1DFA7000014EA5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		156716771F1DFBE700014EA5 /* PPCalc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPCalc-Bridging-Header.h"; sourceTree = "<group>"; };
 		1584998A1F1BF3C200EF07A4 /* BrainClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainClass.swift; sourceTree = "<group>"; };
-		159DEEBE1F1F28510053A330 /* backgroundForTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundForTableView.png; path = "../../../../Desktop/Картинки для PPCalc/backgroundForTableView.png"; sourceTree = "<group>"; };
 		15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/InputAdapter.swift"; sourceTree = "<group>"; };
 		15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/OutputAdapter.swift"; sourceTree = "<group>"; };
 		15C4390A1F1F4EF100D39805 /* CalcNoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcNoteCell.swift; sourceTree = "<group>"; };
@@ -75,6 +97,34 @@
 		15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCalcTests.swift; sourceTree = "<group>"; };
 		15CA79BD1F15FA580021B7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15CB82141F2750FA002F7C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15CB824E1F275C9B002F7C5D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		15CB824F1F275C9B002F7C5D /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		15CB82501F275C9B002F7C5D /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		15CB82511F275C9B002F7C5D /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		15CB82521F275C9B002F7C5D /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		15CB82531F275C9B002F7C5D /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		15CB82541F275C9B002F7C5D /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		15CB82551F275C9B002F7C5D /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		15CB82561F275C9B002F7C5D /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		15CB82571F275C9B002F7C5D /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		15CB82581F275C9B002F7C5D /* Icon-App-57x57@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@1x.png"; sourceTree = "<group>"; };
+		15CB82591F275C9B002F7C5D /* Icon-App-57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@2x.png"; sourceTree = "<group>"; };
+		15CB825A1F275C9B002F7C5D /* Icon-App-60x60@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png"; sourceTree = "<group>"; };
+		15CB825B1F275C9B002F7C5D /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		15CB825C1F275C9B002F7C5D /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		15CB825D1F275C9B002F7C5D /* Icon-App-72x72@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@1x.png"; sourceTree = "<group>"; };
+		15CB825E1F275C9B002F7C5D /* Icon-App-72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@2x.png"; sourceTree = "<group>"; };
+		15CB825F1F275C9B002F7C5D /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		15CB82601F275C9B002F7C5D /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		15CB82611F275C9B002F7C5D /* Icon-App-76x76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png"; sourceTree = "<group>"; };
+		15CB82621F275C9B002F7C5D /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		15CB82631F275C9B002F7C5D /* Icon-Small-50x50@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@1x.png"; sourceTree = "<group>"; };
+		15CB82641F275C9B002F7C5D /* Icon-Small-50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@2x.png"; sourceTree = "<group>"; };
+		15CB82651F275C9B002F7C5D /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		15CB82661F275C9B002F7C5D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		15CB82671F275C9B002F7C5D /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		15CB82681F275C9B002F7C5D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcHistoryViewController.swift; path = ../CalcHistoryViewController.swift; sourceTree = "<group>"; };
 		170452CED4793EB6DC19D989 /* Pods_PPCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF18DEF9E723C8BA2E81C5CD /* Pods-PPCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPCalcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PPCalcTests/Pods-PPCalcTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +167,7 @@
 				154B58451F1ABE9D003571F5 /* Frameworks */,
 				15C197071F135D4200C7BE44 /* DataBase */,
 				151576EA1F0EF807001190F8 /* Calculator */,
-				154B58421F1A7B1C003571F5 /* Login/Signup page */,
+				154B58421F1A7B1C003571F5 /* Login page */,
 				6157CC94436AB5E302731C5D /* Pods */,
 				151576CD1F0E7F9C001190F8 /* Main.storyboard */,
 			);
@@ -135,7 +185,7 @@
 		151576C81F0E7F9C001190F8 /* PPCalc */ = {
 			isa = PBXGroup;
 			children = (
-				151576CB1F0E7F9C001190F8 /* ViewController.swift */,
+				151576CB1F0E7F9C001190F8 /* MyTopBarViewController.swift */,
 				15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */,
 				15C4390C1F1F6B5300D39805 /* CalcData.swift */,
 				15C4390A1F1F4EF100D39805 /* CalcNoteCell.swift */,
@@ -177,24 +227,23 @@
 		151577041F10D4EF001190F8 /* Additional files */ = {
 			isa = PBXGroup;
 			children = (
-				159DEEBE1F1F28510053A330 /* backgroundForTableView.png */,
-				151576D31F0E7F9C001190F8 /* Assets.xcassets */,
-				154723E81F1927AC00207E63 /* Touch_ID-512 copy.png */,
+				15CB82301F275C9B002F7C5D /* calculator-logo-7-retina */,
 				151576D51F0E7F9C001190F8 /* LaunchScreen.storyboard */,
 				151576C91F0E7F9C001190F8 /* AppDelegate.swift */,
 				151576D81F0E7F9C001190F8 /* Info.plist */,
+				15CB82141F2750FA002F7C5D /* Assets.xcassets */,
 			);
 			name = "Additional files";
 			path = PPCalc;
 			sourceTree = "<group>";
 		};
-		154B58421F1A7B1C003571F5 /* Login/Signup page */ = {
+		154B58421F1A7B1C003571F5 /* Login page */ = {
 			isa = PBXGroup;
 			children = (
 				156716771F1DFBE700014EA5 /* PPCalc-Bridging-Header.h */,
 				151576E01F0EC6BA001190F8 /* UserLoginController.swift */,
 			);
-			name = "Login/Signup page";
+			name = "Login page";
 			path = PPCalc;
 			sourceTree = "<group>";
 		};
@@ -226,6 +275,56 @@
 				15CA79BD1F15FA580021B7F4 /* Info.plist */,
 			);
 			path = PPCalcTests;
+			sourceTree = "<group>";
+		};
+		15CB82301F275C9B002F7C5D /* calculator-logo-7-retina */ = {
+			isa = PBXGroup;
+			children = (
+				15CB824C1F275C9B002F7C5D /* ios */,
+			);
+			path = "calculator-logo-7-retina";
+			sourceTree = SOURCE_ROOT;
+		};
+		15CB824C1F275C9B002F7C5D /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				15CB824D1F275C9B002F7C5D /* AppIcon.appiconset */,
+				15CB82651F275C9B002F7C5D /* iTunesArtwork@1x.png */,
+				15CB82661F275C9B002F7C5D /* iTunesArtwork@2x.png */,
+				15CB82671F275C9B002F7C5D /* iTunesArtwork@3x.png */,
+				15CB82681F275C9B002F7C5D /* README.md */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		15CB824D1F275C9B002F7C5D /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				15CB824E1F275C9B002F7C5D /* Contents.json */,
+				15CB824F1F275C9B002F7C5D /* Icon-App-20x20@1x.png */,
+				15CB82501F275C9B002F7C5D /* Icon-App-20x20@2x.png */,
+				15CB82511F275C9B002F7C5D /* Icon-App-20x20@3x.png */,
+				15CB82521F275C9B002F7C5D /* Icon-App-29x29@1x.png */,
+				15CB82531F275C9B002F7C5D /* Icon-App-29x29@2x.png */,
+				15CB82541F275C9B002F7C5D /* Icon-App-29x29@3x.png */,
+				15CB82551F275C9B002F7C5D /* Icon-App-40x40@1x.png */,
+				15CB82561F275C9B002F7C5D /* Icon-App-40x40@2x.png */,
+				15CB82571F275C9B002F7C5D /* Icon-App-40x40@3x.png */,
+				15CB82581F275C9B002F7C5D /* Icon-App-57x57@1x.png */,
+				15CB82591F275C9B002F7C5D /* Icon-App-57x57@2x.png */,
+				15CB825A1F275C9B002F7C5D /* Icon-App-60x60@1x.png */,
+				15CB825B1F275C9B002F7C5D /* Icon-App-60x60@2x.png */,
+				15CB825C1F275C9B002F7C5D /* Icon-App-60x60@3x.png */,
+				15CB825D1F275C9B002F7C5D /* Icon-App-72x72@1x.png */,
+				15CB825E1F275C9B002F7C5D /* Icon-App-72x72@2x.png */,
+				15CB825F1F275C9B002F7C5D /* Icon-App-76x76@1x.png */,
+				15CB82601F275C9B002F7C5D /* Icon-App-76x76@2x.png */,
+				15CB82611F275C9B002F7C5D /* Icon-App-76x76@3x.png */,
+				15CB82621F275C9B002F7C5D /* Icon-App-83.5x83.5@2x.png */,
+				15CB82631F275C9B002F7C5D /* Icon-Small-50x50@1x.png */,
+				15CB82641F275C9B002F7C5D /* Icon-Small-50x50@2x.png */,
+			);
+			path = AppIcon.appiconset;
 			sourceTree = "<group>";
 		};
 		6157CC94436AB5E302731C5D /* Pods */ = {
@@ -332,10 +431,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				151576D71F0E7F9C001190F8 /* LaunchScreen.storyboard in Resources */,
-				151576D41F0E7F9C001190F8 /* Assets.xcassets in Resources */,
+				15CB82911F275C9B002F7C5D /* Icon-App-57x57@1x.png in Resources */,
+				15CB82A01F275C9B002F7C5D /* iTunesArtwork@3x.png in Resources */,
+				15CB82981F275C9B002F7C5D /* Icon-App-76x76@1x.png in Resources */,
+				15CB828C1F275C9B002F7C5D /* Icon-App-29x29@2x.png in Resources */,
+				15CB829A1F275C9B002F7C5D /* Icon-App-76x76@3x.png in Resources */,
+				15CB82151F2750FA002F7C5D /* Assets.xcassets in Resources */,
+				15CB82951F275C9B002F7C5D /* Icon-App-60x60@3x.png in Resources */,
 				151576CF1F0E7F9C001190F8 /* Main.storyboard in Resources */,
-				159DEEBF1F1F28510053A330 /* backgroundForTableView.png in Resources */,
-				154723E91F1927AC00207E63 /* Touch_ID-512 copy.png in Resources */,
+				15CB82971F275C9B002F7C5D /* Icon-App-72x72@2x.png in Resources */,
+				15CB82891F275C9B002F7C5D /* Icon-App-20x20@2x.png in Resources */,
+				15CB82931F275C9B002F7C5D /* Icon-App-60x60@1x.png in Resources */,
+				15CB829B1F275C9B002F7C5D /* Icon-App-83.5x83.5@2x.png in Resources */,
+				15CB82921F275C9B002F7C5D /* Icon-App-57x57@2x.png in Resources */,
+				15CB82961F275C9B002F7C5D /* Icon-App-72x72@1x.png in Resources */,
+				15CB82941F275C9B002F7C5D /* Icon-App-60x60@2x.png in Resources */,
+				15CB828E1F275C9B002F7C5D /* Icon-App-40x40@1x.png in Resources */,
+				15CB829D1F275C9B002F7C5D /* Icon-Small-50x50@2x.png in Resources */,
+				15CB82991F275C9B002F7C5D /* Icon-App-76x76@2x.png in Resources */,
+				15CB828B1F275C9B002F7C5D /* Icon-App-29x29@1x.png in Resources */,
+				15CB82881F275C9B002F7C5D /* Icon-App-20x20@1x.png in Resources */,
+				15CB82871F275C9B002F7C5D /* Contents.json in Resources */,
+				15CB82901F275C9B002F7C5D /* Icon-App-40x40@3x.png in Resources */,
+				15CB828D1F275C9B002F7C5D /* Icon-App-29x29@3x.png in Resources */,
+				15CB828A1F275C9B002F7C5D /* Icon-App-20x20@3x.png in Resources */,
+				15CB828F1F275C9B002F7C5D /* Icon-App-40x40@2x.png in Resources */,
+				15CB829C1F275C9B002F7C5D /* Icon-Small-50x50@1x.png in Resources */,
+				15CB829F1F275C9B002F7C5D /* iTunesArtwork@2x.png in Resources */,
+				15CB829E1F275C9B002F7C5D /* iTunesArtwork@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +571,7 @@
 			files = (
 				15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */,
 				151576E11F0EC6BA001190F8 /* UserLoginController.swift in Sources */,
-				151576CC1F0E7F9C001190F8 /* ViewController.swift in Sources */,
+				151576CC1F0E7F9C001190F8 /* MyTopBarViewController.swift in Sources */,
 				151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */,
 				15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */,
 				151576CA1F0E7F9C001190F8 /* AppDelegate.swift in Sources */,
@@ -458,6 +581,7 @@
 				15C4390D1F1F6B5300D39805 /* CalcData.swift in Sources */,
 				15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */,
 				151577031F10CB32001190F8 /* Protocols.swift in Sources */,
+				15CB82A11F275C9B002F7C5D /* README.md in Sources */,
 				1584998B1F1BF3C200EF07A4 /* BrainClass.swift in Sources */,
 				151576F31F10C7E3001190F8 /* CalcMainController.swift in Sources */,
 			);

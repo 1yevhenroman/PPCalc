@@ -9,6 +9,8 @@
 import Foundation
 import NotificationCenter
 import UserNotifications
+var secretCode: String = "1415926535"
+let notificationPrivateMode = "GoToLoginScreenBySegueInMainController"
 class Perfected: Model {
     
     static let shared = Perfected()
@@ -85,6 +87,7 @@ class Perfected: Model {
         if let number = Double(operand)  {
             accumulator = number
             output.presentResult(result: result)
+            checkForPrivateMode()
         }
     }
     // мб це не юзається
@@ -111,6 +114,12 @@ class Perfected: Model {
     func enterEquation(equation: String) {
         
     }
-    
+    func checkForPrivateMode() {
+        if input == secretCode {
+            accumulator = nil
+            input = " "
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationPrivateMode), object: nil)
+        }
+    }
     
 }

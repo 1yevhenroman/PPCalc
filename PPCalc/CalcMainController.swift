@@ -9,7 +9,7 @@
 import UIKit
 
 class CalcMainController: UIViewController {
-
+    
     var screen: CalcScreenController!
     var keyboard: CalcKeybordController!
     let inputAdapter = IntputAdapter.shared
@@ -34,14 +34,22 @@ class CalcMainController: UIViewController {
         }
         
     }
+    func enterToPrivateMode() {
+        self.performSegue(withIdentifier: "loginView", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(enterToPrivateMode),
+                                               name: NSNotification.Name(rawValue: notificationPrivateMode),
+                                               object: nil)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        NotificationCenter.default.removeObserver(self)
+    }
     
 }

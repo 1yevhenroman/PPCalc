@@ -12,7 +12,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
-    
+    var buttonConstraints: [NSLayoutConstraint] = []
     let facebookLoginButton: FBSDKLoginButton = {
     let loginButton = FBSDKLoginButton()
     loginButton.readPermissions = ["email"]
@@ -212,7 +212,19 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(facebookLoginButton)
+        
         facebookLoginButton.center = CGPoint(x: (view.frame.size.width - facebookLoginButton.center.x)/2, y: view.frame.size.height - facebookLoginButton.frame.size.height)
+        facebookLoginButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        //Facebook button's constraints
+        let equalWidth = facebookLoginButton.widthAnchor.constraint(equalTo: facebookLoginButton.widthAnchor)
+        let equalHeight = facebookLoginButton.heightAnchor.constraint(equalTo: facebookLoginButton.heightAnchor)
+        let bottomConstraint = facebookLoginButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        let leftConstraint = facebookLoginButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor)
+        let rightConstraint = facebookLoginButton.rightAnchor.constraint(equalTo: self.view.rightAnchor)
+        
+        buttonConstraints = [bottomConstraint,leftConstraint, rightConstraint,equalWidth,equalHeight]
+        NSLayoutConstraint.activate(buttonConstraints)
         facebookLoginButton.delegate = self
     }
    

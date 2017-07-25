@@ -13,7 +13,7 @@ class CalcHistoryViewController: UITableViewController {
     
     let dataHistory = CalcHistoryCoreData.shared
     var refresher: UIRefreshControl!
-    
+    var blurConstraints: [NSLayoutConstraint] = []
     ///overrides
     override func tableView(_ tableView: UITableView, numberOfRowsInSection numberOfRowSection: Int)->Int {
         return dataHistory.noteItems.count
@@ -24,8 +24,8 @@ class CalcHistoryViewController: UITableViewController {
 
             cell.noteLabel.text =  item.value(forKey: "numberForNote") as? String
             cell.noteTextView.text! = item.value(forKey: "note") as! String
-            cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
-            cell.contentView.backgroundColor = UIColor(white: 1, alpha: 0.5)
+            cell.backgroundColor = UIColor(white: 1, alpha: 0.0)
+            cell.contentView.backgroundColor = UIColor(white: 1, alpha: 0.0)
             return cell
         }
         
@@ -37,17 +37,12 @@ class CalcHistoryViewController: UITableViewController {
         // Add a background view to the table view
         let backgroundImage = UIImage(named: "MainBackgroundForPpcalc.png")
         let imageView = UIImageView(image: backgroundImage)
+        imageView.contentMode = .scaleAspectFill
         self.tableView.backgroundView = imageView
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = imageView.bounds
-        imageView.addSubview(blurView)
-        imageView.contentMode = .scaleAspectFit
-        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NoteEntity")
-        
+    
         do {
             let results = try managedContext.fetch(fetchRequest)
             dataHistory.noteItems = results
