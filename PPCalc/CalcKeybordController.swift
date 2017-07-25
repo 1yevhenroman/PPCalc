@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
+
 let notificationForSendResult = "'ScreenController'PleaseSendResultTo'CalcHistory'"
 class CalcKeybordController: UIViewController {
-    
+    let systemSoundID: SystemSoundID = 1103
     @IBOutlet var allKeyboardButtons: [UIButton]!
     var onNumTap: ((_ num: Int)->())?
     var onUtilityTap: ((_ symbol: Int)->())?
@@ -37,10 +39,16 @@ class CalcKeybordController: UIViewController {
 
     @IBAction func onNumericTap(_ button: UIButton) {
         onNumTap?(button.tag)
+        if UserDefaults.standard.bool(forKey: "Sound") {
+        AudioServicesPlaySystemSound(systemSoundID)
+        }
     }
     
     @IBAction func onUtilityTap(_ button: UIButton) {
         onUtilityTap?(button.tag)
+        if UserDefaults.standard.bool(forKey: "Sound") {
+            AudioServicesPlaySystemSound(systemSoundID)
+        }
     }
     
     override func viewDidLoad() {

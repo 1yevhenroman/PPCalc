@@ -12,7 +12,7 @@ import CoreData
 class CalcHistoryCoreData {
     
     static let shared = CalcHistoryCoreData()
-    let brain = Perfected.shared
+    private let brain = Perfected.shared
     var noteItems = [NSManagedObject]()
     init() {
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: notificationForSavingResult), object: nil, queue: nil, using: saveResult)
@@ -37,4 +37,43 @@ class CalcHistoryCoreData {
         }
         
     }
+    func removeNote(_ row: Int) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        managedContext.delete((noteItems[row]))
+        noteItems.remove(at: row)
+    }
+    func fetch () {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NoteEntity")
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            noteItems = results
+        }
+        catch {
+            print("Error in fetch request")
+        }
+    }
+    func getResult(by row: Int)->String {
+        return noteItems[row].value(forKey: "numberForNote") as! String
+    }
+    func getNote(by row: Int) -> String {
+        return noteItems[row].value(forKey: "note") as! String
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

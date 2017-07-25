@@ -74,6 +74,7 @@ class Perfected: Model {
         }
         if accumulator != nil {
         output.presentResult(result: result)
+            input = result
         }
     }
     
@@ -87,6 +88,7 @@ class Perfected: Model {
         if let number = Double(operand)  {
             accumulator = number
             output.presentResult(result: result)
+            input = result
             checkForPrivateMode()
         }
     }

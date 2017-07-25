@@ -56,6 +56,8 @@
 		15CB829F1F275C9B002F7C5D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82661F275C9B002F7C5D /* iTunesArtwork@2x.png */; };
 		15CB82A01F275C9B002F7C5D /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15CB82671F275C9B002F7C5D /* iTunesArtwork@3x.png */; };
 		15CB82A11F275C9B002F7C5D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 15CB82681F275C9B002F7C5D /* README.md */; };
+		15CB82B61F278095002F7C5D /* CalcSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CB82B51F278095002F7C5D /* CalcSettings.swift */; };
+		15CB82B81F2780B6002F7C5D /* CalcSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CB82B71F2780B6002F7C5D /* CalcSettingsViewController.swift */; };
 		15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */; };
 		B3DCE3C3D44264C7B9F9922F /* Pods_PPCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170452CED4793EB6DC19D989 /* Pods_PPCalc.framework */; };
 /* End PBXBuildFile section */
@@ -125,6 +127,8 @@
 		15CB82661F275C9B002F7C5D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		15CB82671F275C9B002F7C5D /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		15CB82681F275C9B002F7C5D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15CB82B51F278095002F7C5D /* CalcSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcSettings.swift; sourceTree = "<group>"; };
+		15CB82B71F2780B6002F7C5D /* CalcSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcSettingsViewController.swift; sourceTree = "<group>"; };
 		15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcHistoryViewController.swift; path = ../CalcHistoryViewController.swift; sourceTree = "<group>"; };
 		170452CED4793EB6DC19D989 /* Pods_PPCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF18DEF9E723C8BA2E81C5CD /* Pods-PPCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPCalcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PPCalcTests/Pods-PPCalcTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 		151576C81F0E7F9C001190F8 /* PPCalc */ = {
 			isa = PBXGroup;
 			children = (
+				15CB82B41F277E3E002F7C5D /* CalcSettings */,
 				151576CB1F0E7F9C001190F8 /* MyTopBarViewController.swift */,
 				15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */,
 				15C4390C1F1F6B5300D39805 /* CalcData.swift */,
@@ -325,6 +330,15 @@
 				15CB82641F275C9B002F7C5D /* Icon-Small-50x50@2x.png */,
 			);
 			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		15CB82B41F277E3E002F7C5D /* CalcSettings */ = {
+			isa = PBXGroup;
+			children = (
+				15CB82B51F278095002F7C5D /* CalcSettings.swift */,
+				15CB82B71F2780B6002F7C5D /* CalcSettingsViewController.swift */,
+			);
+			name = CalcSettings;
 			sourceTree = "<group>";
 		};
 		6157CC94436AB5E302731C5D /* Pods */ = {
@@ -579,7 +593,9 @@
 				15C4390B1F1F4EF100D39805 /* CalcNoteCell.swift in Sources */,
 				151576D21F0E7F9C001190F8 /* PPCalc.xcdatamodeld in Sources */,
 				15C4390D1F1F6B5300D39805 /* CalcData.swift in Sources */,
+				15CB82B61F278095002F7C5D /* CalcSettings.swift in Sources */,
 				15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */,
+				15CB82B81F2780B6002F7C5D /* CalcSettingsViewController.swift in Sources */,
 				151577031F10CB32001190F8 /* Protocols.swift in Sources */,
 				15CB82A11F275C9B002F7C5D /* README.md in Sources */,
 				1584998B1F1BF3C200EF07A4 /* BrainClass.swift in Sources */,
