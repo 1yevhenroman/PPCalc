@@ -48,7 +48,12 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Login" id="fcW-JO-i97">
-                                        <barButtonItem key="leftBarButtonItem" title="Calculator" id="Crw-wo-qXK"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Calculator" id="Crw-wo-qXK">
+                                            <connections>
+                                                <action selector="backToCalculator:" destination="i7K-q6-AG6" id="HaL-qr-XcZ"/>
+                                                <segue destination="1wT-d3-vaq" kind="presentation" identifier="fastLogOut" id="ce8-wY-LgR"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="with Touch ID" id="5BU-Vr-VGM">
                                             <connections>
                                                 <action selector="loginWithTouchId:" destination="i7K-q6-AG6" id="7ma-GI-oy4"/>
@@ -142,7 +147,7 @@
                                                     <constraint firstAttribute="height" constant="60" id="OVZ-Q6-InY"/>
                                                 </constraints>
                                                 <connections>
-                                                    <segue destination="Q1q-Pp-U5F" kind="embed" id="z20-1H-YOU"/>
+                                                    <segue destination="Q1q-Pp-U5F" kind="embed" identifier="" id="z20-1H-YOU"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -783,9 +788,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkF-u2-1Aw">
-                                                            <rect key="frame" x="15" y="32" width="74" height="21"/>
+                                                            <rect key="frame" x="15" y="32" width="336" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="74" id="wPh-ez-oAy"/>
+                                                                <constraint firstAttribute="width" constant="336" id="wPh-ez-oAy"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -823,8 +828,8 @@
                                                         <constraint firstItem="mkF-u2-1Aw" firstAttribute="top" secondItem="MmU-VI-gPi" secondAttribute="top" constant="32" id="jC1-iK-Obe"/>
                                                         <constraint firstItem="mkF-u2-1Aw" firstAttribute="leading" secondItem="MmU-VI-gPi" secondAttribute="leading" constant="15" id="jeb-NZ-g1c"/>
                                                         <constraint firstItem="mkF-u2-1Aw" firstAttribute="baseline" secondItem="cv7-U2-cKf" secondAttribute="baseline" id="pQh-rb-NGM"/>
-                                                        <constraint firstItem="cv7-U2-cKf" firstAttribute="leading" secondItem="mkF-u2-1Aw" secondAttribute="trailing" constant="8" symbolic="YES" id="rwa-Fo-fGl"/>
-                                                        <constraint firstItem="JDx-2J-XY9" firstAttribute="leading" secondItem="mkF-u2-1Aw" secondAttribute="trailing" constant="8" symbolic="YES" id="vxF-EH-puJ"/>
+                                                        <constraint firstItem="cv7-U2-cKf" firstAttribute="leading" secondItem="mkF-u2-1Aw" secondAttribute="trailing" constant="-254" id="rwa-Fo-fGl"/>
+                                                        <constraint firstItem="JDx-2J-XY9" firstAttribute="leading" secondItem="mkF-u2-1Aw" secondAttribute="trailing" constant="-254" id="vxF-EH-puJ"/>
                                                         <constraint firstItem="VGe-g8-ZIU" firstAttribute="trailing" secondItem="VPG-Mc-32k" secondAttribute="trailing" id="w4u-RA-S6d"/>
                                                         <constraint firstItem="VGe-g8-ZIU" firstAttribute="trailing" secondItem="JDx-2J-XY9" secondAttribute="trailing" id="w6p-2I-vVY"/>
                                                         <constraint firstAttribute="bottom" secondItem="mkF-u2-1Aw" secondAttribute="bottom" constant="7" id="yjq-Zf-Ezc"/>
@@ -1041,10 +1046,10 @@
             </objects>
             <point key="canvasLocation" x="2778" y="-900"/>
         </scene>
-        <!--Calc Keybord Controller-->
+        <!--Calc Top Bar View Controller-->
         <scene sceneID="EV6-Tg-cwf">
             <objects>
-                <viewController id="Q1q-Pp-U5F" customClass="CalcKeybordController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Q1q-Pp-U5F" customClass="CalcTopBarViewController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GQj-fN-ClG"/>
                         <viewControllerLayoutGuide type="bottom" id="v2o-Tu-WAl"/>
@@ -1057,9 +1062,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <items>
                                     <navigationItem title="Private mode" id="XHg-Ia-RVg">
+                                        <barButtonItem key="leftBarButtonItem" title="Fast Log out" id="qmw-hL-zeR">
+                                            <connections>
+                                                <action selector="logOut:" destination="Q1q-Pp-U5F" id="i4E-he-zK1"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="T73-B6-t18">
                                             <connections>
-                                                <action selector="saveResult:" destination="Q1q-Pp-U5F" id="Nt9-Nx-zPh"/>
+                                                <action selector="saveResult:" destination="Q1q-Pp-U5F" id="AyR-1f-0wo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1074,15 +1084,18 @@
                             <constraint firstItem="QFY-51-GkO" firstAttribute="leading" secondItem="76D-vo-rhA" secondAttribute="leading" id="qbT-de-7W7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="1wT-d3-vaq" kind="presentation" identifier="fastLogOut" id="ueF-PG-HHM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jU6-D8-rhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1634" y="-139"/>
+            <point key="canvasLocation" x="1585" y="-112"/>
         </scene>
-        <!--View Controller-->
+        <!--Calc Top Bar View Controller-->
         <scene sceneID="UHQ-hA-TBb">
             <objects>
-                <viewController id="RGb-K0-9ro" sceneMemberID="viewController">
+                <viewController id="RGb-K0-9ro" customClass="CalcTopBarViewController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YMi-Ki-DbR"/>
                         <viewControllerLayoutGuide type="bottom" id="SZl-sm-3QG"/>
@@ -1095,7 +1108,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <items>
                                     <navigationItem title="History" id="tpS-ki-22Q">
-                                        <barButtonItem key="leftBarButtonItem" title="Fast Log out" id="S1t-Gd-Wtd"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Fast Log out" id="S1t-Gd-Wtd">
+                                            <connections>
+                                                <action selector="logOut:" destination="RGb-K0-9ro" id="KQS-P6-C6f"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1108,15 +1125,18 @@
                             <constraint firstItem="f4B-v4-2Vh" firstAttribute="top" secondItem="drI-ID-z39" secondAttribute="top" id="ud2-I5-huf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="1wT-d3-vaq" kind="presentation" identifier="fastLogOut" id="EAb-4V-mPv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfO-Sl-Xd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4959" y="-112"/>
         </scene>
-        <!--View Controller-->
+        <!--Calc Top Bar View Controller-->
         <scene sceneID="Kbs-8I-8sk">
             <objects>
-                <viewController id="VUP-Ua-15c" sceneMemberID="viewController">
+                <viewController id="VUP-Ua-15c" customClass="CalcTopBarViewController" customModule="PPCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jdC-9v-nSj"/>
                         <viewControllerLayoutGuide type="bottom" id="ySQ-dL-34U"/>
@@ -1129,7 +1149,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <items>
                                     <navigationItem title="Settings" id="xwg-5d-lGT">
-                                        <barButtonItem key="leftBarButtonItem" title="Fast Log out" id="26T-3F-XjI"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Fast Log out" id="26T-3F-XjI">
+                                            <connections>
+                                                <action selector="logOut:" destination="VUP-Ua-15c" id="wAx-lJ-e6p"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1142,6 +1166,9 @@
                             <constraint firstItem="0Vc-do-2g7" firstAttribute="top" secondItem="k1c-2M-mYu" secondAttribute="top" id="vEY-4F-zi4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="1wT-d3-vaq" kind="presentation" identifier="fastLogOut" id="zr0-Ar-YMf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeO-qA-miK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1155,7 +1182,7 @@
         <image name="calculatorIcon" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qU9-P9-tbY"/>
+        <segue reference="ce8-wY-LgR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

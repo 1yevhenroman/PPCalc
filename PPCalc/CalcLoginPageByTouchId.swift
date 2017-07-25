@@ -8,11 +8,6 @@
 
 import Foundation
 import LocalAuthentication
-class CalcLoginWithFacebook {
-    
-}
-
-
 
 class CalcLoginWithTouchId {
     

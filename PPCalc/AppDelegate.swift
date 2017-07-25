@@ -13,7 +13,8 @@ import CoreData
 let notificationForDeleteAllNotes = "DeleteAllNotes"
 let notificationForSwitchSound = "SwitchSound"
 let notificationForShowAlert = "NotificationForShowingAlert"
-let notificationToNavigateToPrivateMode = "notificationToNavigateToPrivateMode"
+let notificationToNavigateToPrivateMode = "ToNavigateToPrivateMode"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

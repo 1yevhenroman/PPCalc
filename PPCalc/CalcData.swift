@@ -16,9 +16,10 @@ class CalcHistoryCoreData {
     var noteItems = [NSManagedObject]()
     init() {
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: notificationForSavingResult), object: nil, queue: nil, using: saveResult)
+        NotificationCenter.default.addObserver(self, selector: #selector(deleteAll) ,name: NSNotification.Name(rawValue:notificationForDeleteAllNotes),object: nil)
     }
     func saveResult (notification: Notification) {
-        
+
         guard let note = notification.userInfo?["note"] else { return }
        
        let numberForSaving = brain.input
@@ -60,6 +61,9 @@ class CalcHistoryCoreData {
     }
     func getNote(by row: Int) -> String {
         return noteItems[row].value(forKey: "note") as! String
+    }
+     @objc func deleteAll() {
+        noteItems.removeAll()
     }
 }
 

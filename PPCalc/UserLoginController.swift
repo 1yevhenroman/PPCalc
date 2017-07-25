@@ -12,51 +12,37 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    let facebookModel = CalcLoginWithFacebook()
     var buttonConstraints: [NSLayoutConstraint] = []
+
     let facebookLoginButton: FBSDKLoginButton = {
     let loginButton = FBSDKLoginButton()
-    let touchId = CalcLoginWithTouchId.shared
-    loginButton.readPermissions = ["email"]
         return loginButton
     }()
     
+    @IBAction func backToCalculator(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "fastLogOut", sender: self)
+        
+    }
+    
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         
-        navigateToAuthenticatedViewController()
         if !result.isCancelled {
             
             if (FBSDKAccessToken.current() != nil) {
-                fetchProfile()
+                facebookModel.processOfLogging()
             }
+            navigateToAuthenticatedViewController()
             FBSDKLoginManager().logOut()
         }
     }
-    func loginButtonDidLogOut (loginButton: FBSDKLoginButton, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        fetchProfile()
-    }
-    func fetchProfile() {
-        
-        guard let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"email"]) else { return print("error") }
-        graphRequest.start(completionHandler: { (connection, parameters, error) -> Void in
-            if ((error) != nil)
-            {
-                // Process error
-                print("Error: \(String(describing: error))")
-            }
-            else
-            {
-                guard let email:[String:AnyObject] = parameters as? [String : Any] as [String : AnyObject]? else { return print("error with getting email") }
-                print(email["email"]!)
 
-            }
-        })
-        
-    }
     
     public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         
     }
-    func loginButtonWillLogin(_ lo4ginButton: FBSDKLoginButton!)->Bool {
+    func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!)->Bool {
         return true
     }
     
@@ -69,13 +55,7 @@ class UserLoginController: UIViewController, FBSDKLoginButtonDelegate {
      performSegue(withIdentifier: "logged", sender: self)
     }
     
-    /**
-     This method presents an UIAlertViewController to the user.
-     
-     - parameter title:  The title for the UIAlertViewController.
-     - parameter message:The message for the UIAlertViewController.
-     
-     */
+    
     func showAlertWithTitle(notification: Notification ) {
         
         guard let title = notification.userInfo!["title"] else { return }
