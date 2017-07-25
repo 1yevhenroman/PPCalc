@@ -49,7 +49,11 @@
                                 <items>
                                     <navigationItem title="Login" id="fcW-JO-i97">
                                         <barButtonItem key="leftBarButtonItem" title="Calculator" id="Crw-wo-qXK"/>
-                                        <barButtonItem key="rightBarButtonItem" title="with Touch ID" id="5BU-Vr-VGM"/>
+                                        <barButtonItem key="rightBarButtonItem" title="with Touch ID" id="5BU-Vr-VGM">
+                                            <connections>
+                                                <action selector="loginWithTouchId:" destination="i7K-q6-AG6" id="7ma-GI-oy4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
