@@ -18,7 +18,6 @@ class CalcLoginWithTouchId {
     
     func logIn() {
         
-        
         // 2. Check if the device has a fingerprint sensor
         // If not, show the user an alert view and bail out!
         guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
@@ -137,8 +136,8 @@ class CalcLoginWithTouchId {
     /**
      This method will push the authenticated view controller onto the UINavigationController stack
      */
-   func navigateToSecureScreen() {
-     NotificationCenter.default.post(name: Notification.Name(rawValue: notificationToNavigateToPrivateMode), object: self)
+    func navigateToSecureScreen() {
+        NotificationCenter.default.post(name: Notification.Name(rawValue: notificationToNavigateToPrivateMode), object: self)
     }
     
 }

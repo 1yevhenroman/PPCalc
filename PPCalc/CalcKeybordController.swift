@@ -9,8 +9,9 @@
 import UIKit
 import AVFoundation
 
-let notificationForSendResult = "'ScreenController'PleaseSendResultTo'CalcHistory'"
+
 class CalcKeybordController: UIViewController {
+    
     let systemSoundID: SystemSoundID = 1103
     @IBOutlet var allKeyboardButtons: [UIButton]!
     var onNumTap: ((_ num: Int)->())?

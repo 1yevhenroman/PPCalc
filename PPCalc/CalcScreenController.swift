@@ -7,7 +7,7 @@
 //
 
 import UIKit
-let notificationForSavingResult = "needToSaveResult"
+
 
 class CalcScreenController: UIViewController {
    

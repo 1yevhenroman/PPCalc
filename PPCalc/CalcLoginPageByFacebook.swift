@@ -9,32 +9,27 @@
 import Foundation
 
 class CalcLoginWithFacebook {
+    
     static let shared = CalcLoginWithFacebook()
     
     func processOfLogging() {
-        
         if (FBSDKAccessToken.current() != nil) {
             
-        guard let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"email"]) else { return print("error") }
+            guard let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"email"]) else { return print("error") }
             
-        graphRequest.start(completionHandler: { (connection, parameters, error) -> Void in
-            if ((error) != nil)
-            {
-                // Process error
-                print("Error: \(String(describing: error))")
-            }
-            else
-            {
-                guard let email:[String:AnyObject] = parameters as? [String : Any] as [String : AnyObject]? else { return print("error with getting email") }
-                self.checkingEmail(email["email"]! as! String)
-            }
-        })
+            graphRequest.start(completionHandler: { (connection, parameters, error) -> Void in
+                if ((error) != nil) {
+                    // Process error
+                    print("Error: \(String(describing: error))")
+                }
+                else {
+                    guard let email:[String:AnyObject] = parameters as? [String : Any] as [String : AnyObject]? else { return print("error with getting email") }
+                    self.checkingEmail(email["email"]! as! String)
+                }
+            })
+        }
     }
-    
-        
-    
-}
-   private func checkingEmail(_ email: String) {
+    private func checkingEmail(_ email: String) {
         
         if !(email == UserDefaults.standard.string(forKey: "FacebookEmail")) {
             
@@ -44,6 +39,4 @@ class CalcLoginWithFacebook {
             UserDefaults.standard.set(email, forKey: "FacebookEmail")
         }
     }
-    
-    
 }

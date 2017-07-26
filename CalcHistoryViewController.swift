@@ -38,7 +38,7 @@ class CalcHistoryViewController: UITableViewController {
         imageView.contentMode = .scaleAspectFill
         self.tableView.backgroundView = imageView
         dataHistory.fetch()
-     
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class CalcHistoryViewController: UITableViewController {
         tableView.addSubview(refresher)
         refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refresher.addTarget(self, action: #selector(reloadData), for: .valueChanged)
-   }
+    }
     func reloadData () {
         tableView.reloadData()
         refresher.endRefreshing()
@@ -66,6 +66,6 @@ class CalcHistoryViewController: UITableViewController {
         super.viewDidDisappear(true)
         NotificationCenter.default.removeObserver(self)
     }
-   
-
+    
+    
 }

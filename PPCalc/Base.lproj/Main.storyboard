@@ -336,7 +336,7 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-tE-ifQ">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="110.5"/>
                                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="2"/>
                                                 <connections>
                                                     <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="bT7-e7-jUi"/>
@@ -345,7 +345,7 @@
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAD-il-Zlg">
                                                 <rect key="frame" x="187.5" y="0.0" width="94" height="110.5"/>
                                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.49167915239999999" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="3"/>
                                                 <connections>
                                                     <action selector="onNumericTap:" destination="ou6-cz-BoR" eventType="touchUpInside" id="77L-Ni-mtt"/>

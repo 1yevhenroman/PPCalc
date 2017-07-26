@@ -19,10 +19,10 @@ class CalcHistoryCoreData {
         NotificationCenter.default.addObserver(self, selector: #selector(deleteAll) ,name: NSNotification.Name(rawValue:notificationForDeleteAllNotes),object: nil)
     }
     func saveResult (notification: Notification) {
-
+        
         guard let note = notification.userInfo?["note"] else { return }
-       
-       let numberForSaving = brain.input
+        
+        let numberForSaving = brain.input
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "NoteEntity", in: managedContext)
@@ -62,22 +62,8 @@ class CalcHistoryCoreData {
     func getNote(by row: Int) -> String {
         return noteItems[row].value(forKey: "note") as! String
     }
-     @objc func deleteAll() {
+    @objc func deleteAll() {
         noteItems.removeAll()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

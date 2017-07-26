@@ -9,11 +9,9 @@
 import Foundation
 import NotificationCenter
 import UserNotifications
-var secretCode: String = "1415926535"
-let notificationPrivateMode = "GoToLoginScreenBySegueInMainController"
+
 class Perfected: Model {
     
-    static let shared = Perfected()
     var operations: Dictionary< Operation, TypeOperation> = [
         
         .pi : TypeOperation.constant(Double.pi),
@@ -28,12 +26,6 @@ class Perfected: Model {
         .equal : TypeOperation.equals,
         .clear: TypeOperation.clear
     ]
-    
-    
-    var input: String = " "
-    var output = OutputAdapter.shared
-    private var accumulator: Double?
-    var pendingBinaryOperation: PendingBinaryOperation?
     
     enum TypeOperation {
         case constant(Double)
@@ -50,7 +42,12 @@ class Perfected: Model {
             return function(firstOperand, secondOperand)
         }
     }
-   
+    
+    static let shared = Perfected()
+    var input: String = " "
+    var output = OutputAdapter.shared
+    private var accumulator: Double?
+    var pendingBinaryOperation: PendingBinaryOperation?
     
     func performOperation(_ symbol: Operation) {
         if let operation = operations[symbol] {
@@ -73,7 +70,7 @@ class Perfected: Model {
             }
         }
         if accumulator != nil {
-        output.presentResult(result: result)
+            output.presentResult(result: result)
             input = result
         }
     }
@@ -84,6 +81,7 @@ class Perfected: Model {
         }
         pendingBinaryOperation = nil
     }
+    
     func setOperand( _ operand: String) {
         if let number = Double(operand)  {
             accumulator = number
@@ -92,7 +90,7 @@ class Perfected: Model {
             checkForPrivateMode()
         }
     }
-    // мб це не юзається
+    
     func printOnScreen () {
         output.presentResult(result: result)
     }
@@ -114,13 +112,12 @@ class Perfected: Model {
         }
     }
     func enterEquation(equation: String) {
-        
     }
     func checkForPrivateMode() {
         if input == secretCode {
             accumulator = nil
             input = " "
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationPrivateMode), object: nil)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationPrivateMode), object: nil)
         }
     }
     

@@ -9,8 +9,6 @@
 import UIKit
 
 class CalcNoteCell: UITableViewCell {
-
-    
     
     @IBOutlet var noteLabel: UILabel!
     @IBOutlet var noteTextView: UITextView!
@@ -18,18 +16,17 @@ class CalcNoteCell: UITableViewCell {
     @IBOutlet var scrollViewForResult: UIScrollView!
     @IBOutlet var backgroundForResult: UIView!
     
-    
+    ///overrides
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
     }
     override func didAddSubview(_ subview: UIView) {
         if backgroundOfCell != nil {
-             backgroundOfCell.layer.cornerRadius = CGFloat(10.0)
+            backgroundOfCell.layer.cornerRadius = CGFloat(10.0)
             backgroundForResult.layer.cornerRadius = CGFloat(15.0)
             scrollViewForResult.scrollRectToVisible(noteLabel.frame, animated: true)
         }
