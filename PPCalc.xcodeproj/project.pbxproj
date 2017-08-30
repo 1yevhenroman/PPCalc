@@ -21,6 +21,8 @@
 		151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576F41F10C826001190F8 /* CalcScreenController.swift */; };
 		151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151576F61F10C857001190F8 /* CalcKeybordController.swift */; };
 		151577031F10CB32001190F8 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151577021F10CB32001190F8 /* Protocols.swift */; };
+		154658341F55B1A100DB0184 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154658321F55B1A100DB0184 /* InputAdapter.swift */; };
+		154658351F55B1A100DB0184 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154658331F55B1A100DB0184 /* OutputAdapter.swift */; };
 		154723DF1F19133900207E63 /* p-16221.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723DB1F19133900207E63 /* p-16221.jpg */; };
 		154723E01F19133900207E63 /* 333459-2880x1800.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723DC1F19133900207E63 /* 333459-2880x1800.jpg */; };
 		154723E11F19133900207E63 /* wpadne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 154723DD1F19133900207E63 /* wpadne.jpg */; };
@@ -37,8 +39,6 @@
 		156716761F1DFA7000014EA5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156716741F1DFA7000014EA5 /* FBSDKLoginKit.framework */; };
 		158499891F1BF3A600EF07A4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158499881F1BF3A600EF07A4 /* HistoryViewController.swift */; };
 		1584998B1F1BF3C200EF07A4 /* BrainClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584998A1F1BF3C200EF07A4 /* BrainClass.swift */; };
-		15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */; };
-		15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */; };
 		15CA79BC1F15FA580021B7F4 /* PPCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */; };
 		15F520C51F1C02470003F7FE /* CalcHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F520C41F1C02470003F7FE /* CalcHistoryViewController.swift */; };
 		B3DCE3C3D44264C7B9F9922F /* Pods_PPCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170452CED4793EB6DC19D989 /* Pods_PPCalc.framework */; };
@@ -71,6 +71,8 @@
 		151576F41F10C826001190F8 /* CalcScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcScreenController.swift; sourceTree = "<group>"; };
 		151576F61F10C857001190F8 /* CalcKeybordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcKeybordController.swift; sourceTree = "<group>"; };
 		151577021F10CB32001190F8 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		154658321F55B1A100DB0184 /* InputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAdapter.swift; sourceTree = "<group>"; };
+		154658331F55B1A100DB0184 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputAdapter.swift; sourceTree = "<group>"; };
 		154723DB1F19133900207E63 /* p-16221.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "p-16221.jpg"; path = "../../../../Desktop/Картинки для PPCalc/p-16221.jpg"; sourceTree = "<group>"; };
 		154723DC1F19133900207E63 /* 333459-2880x1800.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "333459-2880x1800.jpg"; path = "../../../../Desktop/Картинки для PPCalc/333459-2880x1800.jpg"; sourceTree = "<group>"; };
 		154723DD1F19133900207E63 /* wpadne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wpadne.jpg; path = "../../../../Desktop/Картинки для PPCalc/wpadne.jpg"; sourceTree = "<group>"; };
@@ -88,8 +90,6 @@
 		156716771F1DFBE700014EA5 /* PPCalc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPCalc-Bridging-Header.h"; sourceTree = "<group>"; };
 		158499881F1BF3A600EF07A4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		1584998A1F1BF3C200EF07A4 /* BrainClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainClass.swift; sourceTree = "<group>"; };
-		15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/InputAdapter.swift"; sourceTree = "<group>"; };
-		15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutputAdapter.swift; path = "../../../../Downloads/Calculator-master-3/Calculator/OutputAdapter.swift"; sourceTree = "<group>"; };
 		15CA79B91F15FA570021B7F4 /* PPCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA79BB1F15FA580021B7F4 /* PPCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCalcTests.swift; sourceTree = "<group>"; };
 		15CA79BD1F15FA580021B7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,10 +174,10 @@
 		151576EB1F0EF810001190F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				154658321F55B1A100DB0184 /* InputAdapter.swift */,
+				154658331F55B1A100DB0184 /* OutputAdapter.swift */,
 				1584998A1F1BF3C200EF07A4 /* BrainClass.swift */,
-				15C196ED1F12E0C600C7BE44 /* InputAdapter.swift */,
 				151577021F10CB32001190F8 /* Protocols.swift */,
-				15C196EE1F12E0C600C7BE44 /* OutputAdapter.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -491,9 +491,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C196F21F12E0C600C7BE44 /* InputAdapter.swift in Sources */,
+				154658351F55B1A100DB0184 /* OutputAdapter.swift in Sources */,
 				151576E31F0EC7CD001190F8 /* UserSignUpController.swift in Sources */,
 				151576E11F0EC6BA001190F8 /* UserLoginController.swift in Sources */,
+				154658341F55B1A100DB0184 /* InputAdapter.swift in Sources */,
 				151576CC1F0E7F9C001190F8 /* ViewController.swift in Sources */,
 				151576F71F10C857001190F8 /* CalcKeybordController.swift in Sources */,
 				158499891F1BF3A600EF07A4 /* HistoryViewController.swift in Sources */,
@@ -501,7 +502,6 @@
 				151576CA1F0E7F9C001190F8 /* AppDelegate.swift in Sources */,
 				151576F51F10C826001190F8 /* CalcScreenController.swift in Sources */,
 				151576D21F0E7F9C001190F8 /* PPCalc.xcdatamodeld in Sources */,
-				15C196F31F12E0C600C7BE44 /* OutputAdapter.swift in Sources */,
 				151577031F10CB32001190F8 /* Protocols.swift in Sources */,
 				1584998B1F1BF3C200EF07A4 /* BrainClass.swift in Sources */,
 				151576F31F10C7E3001190F8 /* CalcMainController.swift in Sources */,
@@ -717,7 +717,7 @@
 				151576DA1F0E7F9C001190F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		151576DB1F0E7F9C001190F8 /* Build configuration list for PBXNativeTarget "PPCalc" */ = {
 			isa = XCConfigurationList;
@@ -726,7 +726,7 @@
 				151576DD1F0E7F9C001190F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		15CA79C21F15FA580021B7F4 /* Build configuration list for PBXNativeTarget "PPCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -735,7 +735,7 @@
 				15CA79C11F15FA580021B7F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
