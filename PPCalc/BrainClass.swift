@@ -11,20 +11,19 @@ import NotificationCenter
 import UserNotifications
 
 class Perfected: Model {
-    
-    var operations: Dictionary< Operation, TypeOperation> = [
+    var operations: Dictionary<Int, TypeOperation> = [
         
-        .pi : TypeOperation.constant(Double.pi),
-        .sqrt : TypeOperation.unaryOperation(sqrt),
-        .cos: TypeOperation.unaryOperation(cos),
-        .sign : TypeOperation.unaryOperation({-$0}),
-        .mul : TypeOperation.binaryOperation({$0 * $1}),
-        .div : TypeOperation.binaryOperation({$0 / $1}),
-        .pls : TypeOperation.binaryOperation({$0 + $1}),
-        .mns : TypeOperation.binaryOperation({$0 - $1}),
-        .per :TypeOperation.unaryOperation({$0/100}),
-        .equal : TypeOperation.equals,
-        .clear: TypeOperation.clear
+        Operation.pi.rawValue : TypeOperation.constant(Double.pi),
+        Operation.sqrt.rawValue : TypeOperation.unaryOperation(sqrt),
+        Operation.cos.rawValue: TypeOperation.unaryOperation(cos),
+        Operation.sign.rawValue : TypeOperation.unaryOperation({-$0}),
+        Operation.mul.rawValue : TypeOperation.binaryOperation({$0 * $1}),
+        Operation.div.rawValue : TypeOperation.binaryOperation({$0 / $1}),
+        Operation.pls.rawValue : TypeOperation.binaryOperation({$0 + $1}),
+        Operation.mns.rawValue : TypeOperation.binaryOperation({$0 - $1}),
+        Operation.per.rawValue :TypeOperation.unaryOperation({$0/100}),
+        Operation.equal.rawValue : TypeOperation.equals,
+        Operation.clear.rawValue : TypeOperation.clear
     ]
     
     enum TypeOperation {
@@ -44,18 +43,21 @@ class Perfected: Model {
     }
     
     static let shared = Perfected()
-    var input: String = " "
+    var input: String = ""
     var output = OutputAdapter.shared
     private var accumulator: Double?
     var pendingBinaryOperation: PendingBinaryOperation?
     
-    func performOperation(_ symbol: Operation) {
+    func performOperation(_ symbol: Operation.RawValue) {
+        
         if let operation = operations[symbol] {
             switch operation {
-            case .constant(let value): accumulator = value
+            case .constant(let value):
+                accumulator = value
             case .unaryOperation(let function):
                 if accumulator != nil {
-                    accumulator = function(accumulator!)}
+                    accumulator = function(accumulator!)
+                }
             case .binaryOperation(let function):
                 if accumulator != nil {
                     pendingBinaryOperation=PendingBinaryOperation(function: function, firstOperand: accumulator!)
@@ -63,9 +65,10 @@ class Perfected: Model {
                 }
             case .equals():
                 performPendingBinaryOperation()
+                output.presentResult(result: result)
             case .clear():
                 accumulator = nil
-                input = " "
+                input = ""
                 output.presentResult(result: result)
             }
         }
@@ -92,9 +95,9 @@ class Perfected: Model {
     }
     
     func printOnScreen () {
-        output.presentResult(result: result)
+        output.presentResult(result: input)
     }
-    
+
     var result: String {
         get {
             if let res = accumulator {
@@ -107,18 +110,22 @@ class Perfected: Model {
                 return String(res)
             }
             else {
-                return " "
+                return ""
             }
+        }
+        set {
+            accumulator = Double(newValue)
         }
     }
     func enterEquation(equation: String) {
+        
     }
+    
     func checkForPrivateMode() {
         if input == secretCode {
             accumulator = nil
-            input = " "
+            input = ""
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationPrivateMode), object: nil)
         }
     }
-    
 }
