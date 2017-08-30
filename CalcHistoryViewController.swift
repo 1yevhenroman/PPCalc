@@ -59,11 +59,8 @@ class CalcHistoryViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(true)
+        super.viewDidDisappear(animated)
         NotificationCenter.default.removeObserver(self)
     }
     

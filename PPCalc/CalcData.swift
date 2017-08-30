@@ -22,7 +22,7 @@ class CalcHistoryCoreData {
         
         guard let note = notification.userInfo?["note"] else { return }
         
-        let numberForSaving = brain.input
+        let numberForSaving = brain.result
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "NoteEntity", in: managedContext)
