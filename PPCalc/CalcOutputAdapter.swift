@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+class OutputAdapter: OutputProtocol {
+    
+    static let shared = OutputAdapter()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    var resultDisplay: CalcScreenController?
+    
+    func presentResult(result: String) {
+       resultDisplay?.presentResult(result)
+    }
+    
+}

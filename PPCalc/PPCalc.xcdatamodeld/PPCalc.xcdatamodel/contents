@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
-        <attribute name="keyForAccessToData" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="userLogin" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="userPassword" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="ListEntity" representedClassName="ListEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="item" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NoteEntity" representedClassName="NoteEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberForNote" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Users" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="NoteEntity" positionX="-182" positionY="108" width="128" height="75"/>
+        <element name="ListEntity" positionX="-180" positionY="126" width="128" height="60"/>
     </elements>
 </model>

@@ -1,0 +1,6 @@
+framework module Pods_PPCalc {
+  umbrella header "Pods-PPCalc-umbrella.h"
+
+  export *
+  module * { export * }
+}
